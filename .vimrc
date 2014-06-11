@@ -20,7 +20,8 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'flazz/vim-colorschemes'
 NeoBundle 'ervandew/supertab'
-"NeoBundle 'Lokaltog/vim-easymotion'
+NeoBundle 'Lokaltog/vim-easymotion'
+NeoBundle 'tpope/vim-fugitive'
 
 NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'tpope/vim-bundler'
@@ -53,7 +54,7 @@ set backspace=2
 nnoremap <silent> <C-l> :nohl<CR><C-l>
 
 " Auto remove trailing whitespace
-"autocmd BufWritePre * :%s/\s\+$//e
+autocmd BufWritePre * :%s/\s\+$//e
 
 colo badwolf
 set background=dark
