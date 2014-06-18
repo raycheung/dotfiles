@@ -11,7 +11,7 @@ set fish_theme krisleech
 set fish_plugins brew rbenv bundler ndenv
 
 # Path to your custom folder (default path is $FISH/custom)
-#set fish_custom $HOME/dotfiles/oh-my-fish
+set fish_custom ~/.dotfiles/oh-my-fish
 
 # Load oh-my-fish configuration.
 . $fish_path/oh-my-fish.fish
