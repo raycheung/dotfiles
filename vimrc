@@ -68,8 +68,7 @@ autocmd BufWritePre * :%s/\s\+$//e
 colo badwolf
 set background=dark
 
-noremap <silent> <C-l> :nohl<CR><C-l>
-"noremap <silent> <C-d> :Dash<CR><C-d>
-noremap <silent> <C-g> :!gulp<CR><C-g>
-noremap <silent> <C-t> :!tig<CR><C-t>
-noremap <silent> <C-s> :Gstatus<CR><C-s>
+noremap <silent> <C-l> :nohl<CR>
+noremap <silent> <C-g> :!gulp<CR>
+noremap <silent> <C-t> :!tig<CR>
+noremap <silent> <C-s> :Gstatus<CR>
