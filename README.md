@@ -5,6 +5,14 @@ Check out good vim color schemes: http://cocopon.me/app/vim-color-gallery/
 
 ------
 
+## Quickstart
+
+    git clone http://github.com/raycheung/dotfiles ~/.dotfiles
+    brew install rcm
+    set -x RCRC ~/.dotfiles/rcrc; and rcup -f -v
+
+------
+
 ### My brews
 
 my stuff:
