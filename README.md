@@ -27,7 +27,7 @@ and:
 
 ### My crontab
 
-    45 8-17 * * 1-5	/usr/local/bin/brew update &> /dev/null
-    45 8-17 * * 1-5	git -C ~/.oh-my-fish pull &> /dev/null
-    45 8-17 * * 1-5	(git -C ~/.rbenv pull; and git -C ~/.rbenv/plugins/ruby-build pull) &> /dev/null
-    45 8-17 * * 1-5	(git -C ~/.ndenv pull; and git -C ~/.ndenv/plugins/node-build pull) &> /dev/null
+    45 8-17 * * 1-5 /usr/local/bin/brew update &> /dev/null
+    45 8-17 * * 1-5 git -C ~/.oh-my-fish pull &> /dev/null
+    45 8-17 * * 1-5 (git -C ~/.rbenv pull && git -C ~/.rbenv/plugins/ruby-build pull) &> /dev/null
+    45 8-17 * * 1-5 (git -C ~/.ndenv pull && git -C ~/.ndenv/plugins/node-build pull) &> /dev/null
