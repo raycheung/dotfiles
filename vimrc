@@ -66,11 +66,11 @@ set backspace=2
 autocmd BufWritePre * :%s/\s\+$//e
 
 colo badwolf
-set background=dark
+"set background=dark
 
 noremap <silent> <C-l> :nohl<CR>
 noremap <silent> <C-g> :!gulp<CR>
-noremap <silent> <C-t> :!tig<CR>
+noremap <silent> <C-t> :!tig --all<CR>
 noremap <silent> <C-s> :Gstatus<CR>
 noremap <silent> <S-b> :Gbrowse<CR>
 noremap <silent> <S-f> :Git fetch -p<CR>
