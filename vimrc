@@ -73,3 +73,4 @@ noremap <silent> <C-g> :!gulp<CR>
 noremap <silent> <C-t> :!tig<CR>
 noremap <silent> <C-s> :Gstatus<CR>
 noremap <silent> <S-b> :Gbrowse<CR>
+noremap <silent> <S-f> :Git fetch -p<CR>
