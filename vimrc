@@ -22,6 +22,7 @@ NeoBundle 'flazz/vim-colorschemes'
 NeoBundle 'ervandew/supertab'
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'rking/ag.vim'
 
 NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'tpope/vim-bundler'
