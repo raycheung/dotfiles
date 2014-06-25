@@ -34,9 +34,6 @@ NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'tpope/vim-haml'
 NeoBundle 'plasticboy/vim-markdown'
 
-" Dash
-"NeoBundle 'rizzatti/dash.vim'
-
 call neobundle#end()
 
 " Required:
