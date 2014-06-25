@@ -31,6 +31,7 @@ NeoBundle 'thoughtbot/vim-rspec'
 NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'tpope/vim-haml'
+NeoBundle 'plasticboy/vim-markdown'
 
 " Dash
 "NeoBundle 'rizzatti/dash.vim'
