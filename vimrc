@@ -43,8 +43,7 @@ filetype plugin indent on
 " this will conveniently prompt you to install them.
 NeoBundleCheck
 
-" tell ctrlp to follow .gitignore
-"let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files']
+" use ag for ctrlp
 let g:ctrlp_user_command = 'ag %s -l -g ""'
 
 " fix crontab -e
@@ -55,11 +54,11 @@ set number
 set ruler
 set hlsearch
 
+set backspace=2
 set tabstop=2
 set shiftwidth=2
 set expandtab
 set smarttab
-set backspace=2
 
 " Auto remove trailing whitespace
 autocmd BufWritePre * :%s/\s\+$//e
@@ -68,10 +67,8 @@ colo badwolf
 set background=dark
 
 noremap <silent> <C-l> :nohl<CR>
-noremap <silent> <C-g> :!gulp<CR>
 noremap <silent> <C-t> :!tig --all<CR>
 noremap <silent> <C-s> :Gstatus<CR>
 noremap <silent> <S-b> :Gbrowse<CR>
 noremap <silent> <S-f> :Git fetch -p<CR>
-
 noremap <silent> <S-w> :mks! ~/.vim_session<CR>
