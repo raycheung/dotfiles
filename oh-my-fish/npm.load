@@ -1,0 +1,1 @@
+set PATH (find $HOME -maxdepth 3 -name node_modules -type d -execdir npm bin \;) $PATH
