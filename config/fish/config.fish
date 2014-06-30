@@ -16,6 +16,7 @@ set fish_custom ~/.dotfiles/oh-my-fish
 # Load oh-my-fish configuration.
 . $fish_path/oh-my-fish.fish
 
+# I love vim
 set -x EDITOR (which vim)
 
 # for Android
@@ -24,6 +25,5 @@ launchctl setenv ANDROID_HOME $ANDROID_HOME
 set -x JAVA_HOME (/usr/libexec/java_home)
 launchctl setenv JAVA_HOME $JAVA_HOME
 
-set -x PATH (npm bin) $PATH
-
+# for posgres
 set -x PGDATA /usr/local/var/postgres
