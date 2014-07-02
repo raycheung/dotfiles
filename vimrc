@@ -34,6 +34,9 @@ NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'tpope/vim-haml'
 NeoBundle 'plasticboy/vim-markdown'
 
+" Dash
+NeoBundle 'rizzatti/dash.vim'
+
 call neobundle#end()
 
 " Required:
@@ -72,3 +75,6 @@ noremap <silent> <C-s> :Gstatus<CR>
 noremap <silent> <S-b> :Gbrowse<CR>
 noremap <silent> <S-f> :Git fetch -p<CR>
 noremap <silent> <S-w> :mks! ~/.vim_session<CR>
+
+" Dashing
+nmap <silent> <leader>d <Plug>DashSearch
