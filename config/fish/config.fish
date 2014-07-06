@@ -26,4 +26,4 @@ set -x JAVA_HOME (/usr/libexec/java_home)
 launchctl setenv JAVA_HOME $JAVA_HOME
 
 # for posgres
-set -x PGDATA /usr/local/var/postgres
+set -x PGDATA /usr/local/var/lib/postgres
