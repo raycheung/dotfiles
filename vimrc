@@ -23,6 +23,7 @@ NeoBundle 'ervandew/supertab'
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'rking/ag.vim'
+NeoBundle 'scrooloose/nerdtree'
 
 NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'tpope/vim-bundler'
@@ -74,9 +75,14 @@ set background=dark
 noremap <silent> <C-l> :nohl<CR>
 noremap <silent> <C-t> :!tig --all<CR>
 noremap <silent> <C-s> :Gstatus<CR>
+noremap <silent> <C-n> :NERDTreeToggle<CR>
 noremap <silent> <S-b> :Gbrowse<CR>
 noremap <silent> <S-f> :Git fetch -p<CR>
 noremap <silent> <S-w> :mks! ~/.vim_session<CR>
 
 " Dashing
 nmap <silent> <leader>d <Plug>DashSearch
+
+" NERD Tree
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
