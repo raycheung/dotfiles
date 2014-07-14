@@ -8,20 +8,9 @@ Check out good vim color schemes: http://cocopon.me/app/vim-color-gallery/
 ## Quickstart
 
     git clone http://github.com/raycheung/dotfiles ~/.dotfiles
-    brew install rcm
+    bash -c 'ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"'
+    cat ~/.dotfiles/brews | xargs brew install
     env RCRC=~/.dotfiles/rcrc rcup -f -v
-
-------
-
-### My brews
-
-my stuff:
-
-    brew install rcm fish vim git tig ag
-
-and:
-
-    brew install android-sdk chromedriver phantomjs postgresql qt imagemagick
 
 ------
 
