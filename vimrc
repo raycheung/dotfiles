@@ -57,7 +57,6 @@ syntax enable
 set number
 set ruler
 set cursorline
-set splitbelow
 set hlsearch
 
 set backspace=2
