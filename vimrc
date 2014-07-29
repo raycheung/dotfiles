@@ -17,21 +17,21 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 NeoBundleFetch 'Shougo/neobundle.vim'
 
 " Bundles
-NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'flazz/vim-colorschemes'
+NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'ervandew/supertab'
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'rking/ag.vim'
 NeoBundle 'scrooloose/nerdtree'
 
+NeoBundle 'pangloss/vim-javascript'
+NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'tpope/vim-bundler'
 NeoBundle 'tpope/vim-rails'
 NeoBundle 'tpope/vim-rake'
 NeoBundle 'thoughtbot/vim-rspec'
-NeoBundle 'pangloss/vim-javascript'
-NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'tpope/vim-haml'
 NeoBundle 'plasticboy/vim-markdown'
 
@@ -68,8 +68,7 @@ set smarttab
 " Auto remove trailing whitespace
 autocmd BufWritePre * :%s/\s\+$//e
 
-colo badwolf
-set background=dark
+colo Monokai
 
 noremap <silent> <C-l> :nohl<CR>
 noremap <silent> <C-t> :!tig --all<CR>
