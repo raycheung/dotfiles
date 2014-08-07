@@ -4,11 +4,12 @@ chromedriver
 fish
 ghostscript
 git
+heroku-toolbelt
 imagemagick
 markdown
-openssl
 postgresql
 qt
 rcm
 the_silver_searcher
 tig
+vim
