@@ -74,6 +74,7 @@ noremap <silent> <C-l> :nohl<CR>
 noremap <silent> <C-t> :!tig --all<CR>
 noremap <silent> <C-s> :Gstatus<CR>
 noremap <silent> <C-n> :NERDTreeToggle<CR>
+noremap <silent> ,n :NERDTreeFind<CR>
 noremap <silent> <S-b> :Gbrowse<CR>
 noremap <silent> <S-f> :Git fetch -p<CR>
 noremap <S-w> :mks! ~/.vim-session<CR>
