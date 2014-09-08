@@ -68,7 +68,7 @@ set smarttab
 " Auto remove trailing whitespace
 autocmd BufWritePre * :%s/\s\+$//e
 
-colo Monokai
+colorscheme hybrid
 
 noremap <silent> <C-l> :nohl<CR>
 noremap <silent> <C-t> :!tig --all<CR>
@@ -87,3 +87,6 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | wincmd l |
 
 " Auto maximizing selected window
 let &winheight = &lines * 7 / 10
+
+" Better gf for rails
+set path+=lib/*/
