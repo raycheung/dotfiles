@@ -68,7 +68,7 @@ set smarttab
 " Auto remove trailing whitespace
 autocmd BufWritePre * :%s/\s\+$//e
 
-colorscheme hybrid
+colorscheme gruvbox
 
 noremap <silent> <C-l> :nohl<CR>
 noremap <silent> <C-t> :!tig --all<CR>
