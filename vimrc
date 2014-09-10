@@ -58,6 +58,7 @@ set number
 set ruler
 set cursorline
 set hlsearch
+set incsearch
 
 set backspace=2
 set tabstop=2
@@ -69,6 +70,9 @@ set smarttab
 autocmd BufWritePre * :%s/\s\+$//e
 
 colorscheme gruvbox
+
+" 100 times improvement for searching
+vnorem // y/<C-r>"<CR>
 
 noremap <silent> <C-l> :nohl<CR>
 noremap <silent> <C-t> :!tig --all<CR>
