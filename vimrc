@@ -17,13 +17,16 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 NeoBundleFetch 'Shougo/neobundle.vim'
 
 " Bundles
-NeoBundle 'flazz/vim-colorschemes'
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'ervandew/supertab'
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'rking/ag.vim'
 NeoBundle 'scrooloose/nerdtree'
+
+" Color schemes
+"NeoBundle 'flazz/vim-colorschemes'
+NeoBundle 'morhetz/gruvbox'
 
 NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'kchmck/vim-coffee-script'
@@ -68,10 +71,11 @@ set shiftwidth=2
 set expandtab
 set smarttab
 
+colorscheme gruvbox
+set background=dark
+
 " Auto remove trailing whitespace
 autocmd BufWritePre * :%s/\s\+$//e
-
-colorscheme gruvbox
 
 " 100 times improvement for searching
 vnorem // y/<C-r>"<CR>
