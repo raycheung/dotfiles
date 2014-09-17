@@ -30,7 +30,7 @@ NeoBundle 'morhetz/gruvbox'
 
 NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'kchmck/vim-coffee-script'
-NeoBundle 'burnettk/vim-angular'
+"NeoBundle 'burnettk/vim-angular'
 
 NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'tpope/vim-bundler'
