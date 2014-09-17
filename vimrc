@@ -85,7 +85,6 @@ noremap <silent> <C-n> :NERDTreeToggle<CR>
 noremap <silent> ,n :NERDTreeFind<CR>
 noremap <silent> <S-b> :Gbrowse<CR>
 noremap <silent> <S-f> :Git fetch -p<CR>
-noremap <S-w> :NERDTreeClose<CR>:mks! ~/.vim-session<CR>
 
 " Dashing
 nmap <silent> <leader>d <Plug>DashSearch
