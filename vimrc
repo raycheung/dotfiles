@@ -26,6 +26,7 @@ NeoBundle 'rking/ag.vim'
 NeoBundle 'scrooloose/nerdtree'
 
 NeoBundle 'pangloss/vim-javascript'
+NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'burnettk/vim-angular'
 
 NeoBundle 'vim-ruby/vim-ruby'
@@ -33,6 +34,7 @@ NeoBundle 'tpope/vim-bundler'
 NeoBundle 'tpope/vim-rails'
 NeoBundle 'tpope/vim-rake'
 NeoBundle 'thoughtbot/vim-rspec'
+
 NeoBundle 'plasticboy/vim-markdown'
 
 " Dash
