@@ -28,3 +28,6 @@ launchctl setenv JAVA_HOME $JAVA_HOME
 
 # for posgres
 set -x PGDATA /usr/local/var/postgres
+
+# for Python
+set -x PATH $HOME/Library/Python/2.7/bin $PATH
