@@ -75,8 +75,8 @@ set backupskip=/tmp/*,/private/tmp/*
 autocmd BufWritePre * :%s/\s\+$//e
 
 " 100 times improvement for searching
-vnorem // y/<C-r>"<CR>
-noremap /a :Ag <C-r>"<CR>
+noremap // y/<C-r><C-w><CR>
+noremap /a :Ag <C-r><C-w><CR>
 
 noremap <silent> <C-l> :nohl<CR>
 noremap <silent> <C-t> :!tig --all<CR>
