@@ -52,12 +52,6 @@ filetype plugin indent on
 " this will conveniently prompt you to install them.
 NeoBundleCheck
 
-" use ag for ctrlp
-let g:ctrlp_user_command = 'ag %s -l -g ""'
-
-" fix crontab -e
-set backupskip=/tmp/*,/private/tmp/*
-
 syntax enable
 set number
 set ruler
@@ -73,6 +67,9 @@ set smarttab
 
 colorscheme gruvbox
 set background=dark
+
+" Fix crontab -e
+set backupskip=/tmp/*,/private/tmp/*
 
 " Auto remove trailing whitespace
 autocmd BufWritePre * :%s/\s\+$//e
@@ -92,6 +89,9 @@ noremap <S-w> :NERDTreeClose<CR>:mks! ~/.vim-session<CR>
 " Dashing
 nmap <silent> <leader>d <Plug>DashSearch
 
+" Use ag for ctrlp
+let g:ctrlp_user_command = 'ag %s -l -g ""'
+
 " NERD Tree
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | wincmd l | endif
@@ -101,3 +101,9 @@ let &winheight = &lines * 7 / 10
 
 " Better gf for rails
 set path+=lib/*/
+
+" Better rspec
+noremap <Leader>t :call RunCurrentSpecFile()<CR>
+noremap <Leader>s :call RunNearestSpec()<CR>
+noremap <Leader>l :call RunLastSpec()<CR>
+noremap <Leader>a :call RunAllSpecs()<CR>
