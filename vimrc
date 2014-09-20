@@ -103,6 +103,7 @@ let &winheight = &lines * 7 / 10
 set path+=lib/*/
 
 " Better rspec
+let g:rspec_command = "!bundle exec rspec -f d -c {spec}"
 noremap <Leader>t :call RunCurrentSpecFile()<CR>
 noremap <Leader>s :call RunNearestSpec()<CR>
 noremap <Leader>l :call RunLastSpec()<CR>
