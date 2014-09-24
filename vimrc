@@ -9,12 +9,24 @@ if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
 
+set encoding=utf-8
+set termencoding=utf-8
+
 " Required:
 call neobundle#begin(expand('~/.vim/bundle/'))
 
 " Let NeoBundle manage NeoBundle
 " Required:
 NeoBundleFetch 'Shougo/neobundle.vim'
+
+NeoBundle 'Shougo/vimproc.vim', {
+      \ 'build' : {
+      \     'windows' : 'tools\\update-dll-mingw',
+      \     'cygwin' : 'make -f make_cygwin.mak',
+      \     'mac' : 'make -f make_mac.mak',
+      \     'unix' : 'make -f make_unix.mak',
+      \    },
+      \ }
 
 " Bundles
 NeoBundle 'kien/ctrlp.vim'
@@ -23,6 +35,7 @@ NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'rking/ag.vim'
 NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'vim-scripts/tComment'
 
 " Color schemes
 "NeoBundle 'flazz/vim-colorschemes'
