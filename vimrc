@@ -97,7 +97,7 @@ noremap <silent> <C-s> :Gstatus<CR>
 noremap <silent> <C-n> :NERDTreeToggle<CR>
 noremap <silent> ,n :NERDTreeFind<CR>
 noremap <silent> <S-b> :Gbrowse<CR>
-noremap <silent> <S-f> :Git fetch -p<CR>
+noremap <silent> <S-f> :Gfetch -p<CR>
 
 " Dashing
 nmap <silent> <leader>d <Plug>DashSearch
