@@ -113,7 +113,7 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | wincmd l |
 let &winheight = &lines * 7 / 10
 
 " Better gf for rails
-set path+=lib/*/
+set path+=lib/*/,spec/*/,spec/support/*/
 
 " Better rspec
 let g:rspec_command = "!bundle exec rspec -f d -c {spec}"
