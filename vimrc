@@ -38,7 +38,7 @@ NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'vim-scripts/tComment'
 
 " Color schemes
-NeoBundle 'morhetz/gruvbox'
+"NeoBundle 'morhetz/gruvbox'
 
 NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'kchmck/vim-coffee-script'
