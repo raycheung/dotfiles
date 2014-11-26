@@ -106,8 +106,8 @@ nmap <silent> <leader>d <Plug>DashSearch
 let g:ctrlp_user_command = 'ag %s -l -g ""'
 
 " NERD Tree
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | wincmd l | endif
+"autocmd StdinReadPre * let s:std_in=1
+"autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | wincmd l | endif
 
 " Auto maximizing selected window
 let &winheight = &lines * 7 / 10
