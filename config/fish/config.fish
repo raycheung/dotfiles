@@ -9,7 +9,7 @@ set fish_theme cor
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-fish/plugins/*)
 # Custom plugins may be added to ~/.oh-my-fish/custom/plugins/
 # Example format: set fish_plugins autojump bundler
-set fish_plugins brew rbenv bundler ndenv emoji-clock
+set fish_plugins brew tmux rbenv bundler ndenv emoji-clock
 
 # Path to your custom folder (default path is $FISH/custom)
 set fish_custom ~/.dotfiles/oh-my-fish
