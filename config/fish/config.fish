@@ -29,9 +29,6 @@ set -x PGDATA /usr/local/var/postgres
 #set -x JAVA_HOME (/usr/libexec/java_home)
 #launchctl setenv JAVA_HOME $JAVA_HOME
 
-# for Python
-#set -x PATH $HOME/Library/Python/2.7/bin $PATH
-
 # for direnv
 if type direnv > /dev/null 2>&1
   eval (direnv hook fish)
