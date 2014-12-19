@@ -11,6 +11,10 @@ Check out good vim color schemes: http://cocopon.me/app/vim-color-gallery/
     bash -c 'ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"'
     cat ~/.dotfiles/brews | xargs brew install
     env RCRC=~/.dotfiles/rcrc rcup -f -v
+    git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
+    git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
+    git clone https://github.com/riywo/ndenv ~/.ndenv
+    git clone https://github.com/riywo/node-build.git ~/.ndenv/plugins/node-build
 
 ------
 
