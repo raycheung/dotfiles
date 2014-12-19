@@ -1,6 +1,5 @@
-android-sdk
-ant
 chromedriver
+direnv
 fish
 ghostscript
 git
@@ -12,4 +11,5 @@ qt
 rcm
 the_silver_searcher
 tig
+tmux
 vim

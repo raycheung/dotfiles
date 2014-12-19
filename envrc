@@ -1,0 +1,2 @@
+export PGDATA=/usr/local/var/postgres
+PATH_add /usr/local/bin

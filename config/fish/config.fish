@@ -2,8 +2,6 @@
 set fish_path $HOME/.oh-my-fish
 
 # Theme
-#set fish_theme robbyrussell
-#set fish_theme ocean
 set fish_theme cor
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-fish/plugins/*)
@@ -19,15 +17,6 @@ set fish_custom ~/.dotfiles/oh-my-fish
 
 # I love vim
 set -x EDITOR (which vim)
-
-# for posgres
-set -x PGDATA /usr/local/var/postgres
-
-# for Android
-#set -x ANDROID_HOME /usr/local/opt/android-sdk
-#launchctl setenv ANDROID_HOME $ANDROID_HOME
-#set -x JAVA_HOME (/usr/libexec/java_home)
-#launchctl setenv JAVA_HOME $JAVA_HOME
 
 # for direnv
 if type direnv > /dev/null 2>&1
