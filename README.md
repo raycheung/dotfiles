@@ -1,6 +1,8 @@
 Moving development environment around.
 ------
 
+Mac Terminal theme: https://github.com/flipxfx/gruvbox-terminal
+
 Check out good vim color schemes: http://cocopon.me/app/vim-color-gallery/
 
 ------

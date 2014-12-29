@@ -39,7 +39,7 @@ NeoBundle 'vim-scripts/tComment'
 NeoBundle 'tpope/vim-dispatch'
 
 " Color schemes
-"NeoBundle 'morhetz/gruvbox'
+NeoBundle 'morhetz/gruvbox'
 
 NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'kchmck/vim-coffee-script'
@@ -78,9 +78,9 @@ set shiftwidth=2
 set expandtab
 set smarttab
 
-"colorscheme gruvbox
-"set background=dark
-colorscheme lucario
+set background=dark
+colorscheme gruvbox
+"colorscheme lucario
 
 " Fix crontab -e
 set backupskip=/tmp/*,/private/tmp/*
