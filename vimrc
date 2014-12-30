@@ -29,14 +29,15 @@ NeoBundle 'Shougo/vimproc.vim', {
       \ }
 
 " Bundles
-NeoBundle 'kien/ctrlp.vim'
-NeoBundle 'ervandew/supertab'
-NeoBundle 'Lokaltog/vim-easymotion'
-NeoBundle 'tpope/vim-fugitive'
-NeoBundle 'rking/ag.vim'
-NeoBundle 'scrooloose/nerdtree'
-NeoBundle 'vim-scripts/tComment'
 NeoBundle 'tpope/vim-dispatch'
+NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'kien/ctrlp.vim'
+NeoBundle 'rking/ag.vim'
+NeoBundle 'Lokaltog/vim-easymotion'
+NeoBundle 'ervandew/supertab'
+NeoBundle 'tpope/vim-commentary'
+NeoBundle 'tpope/vim-surround'
 
 " Color schemes
 NeoBundle 'morhetz/gruvbox'
@@ -90,12 +91,11 @@ autocmd BufWritePre * :%s/\s\+$//e
 " 100 times improvement for searching
 noremap // y/<C-r><C-w><CR>
 noremap /ag :Ag <C-r><C-w><CR>
-
 noremap <silent> <C-l> :nohl<CR>
-noremap <silent> <C-t> :!tig --all<CR>
+
+" My gits
 noremap <silent> <C-s> :Gstatus<CR>
-noremap <silent> <C-n> :NERDTreeToggle<CR>
-noremap <silent> ,n :NERDTreeFind<CR>
+noremap <silent> <S-t> :Start tig --all<CR>
 noremap <silent> <S-b> :Gbrowse<CR>
 noremap <silent> <S-f> :Gfetch --all -p<CR>
 
@@ -105,7 +105,9 @@ nmap <silent> <leader>d <Plug>DashSearch
 " Use ag for ctrlp
 let g:ctrlp_user_command = 'ag %s -l -g ""'
 
-" NERD Tree
+" Better NERDTree experience
+noremap <silent> <C-n> :NERDTreeToggle<CR>
+noremap <silent> ,n :NERDTreeFind<CR>
 "autocmd StdinReadPre * let s:std_in=1
 "autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | wincmd l | endif
 
@@ -116,7 +118,6 @@ let &winheight = &lines * 7 / 10
 set path+=lib/*/,spec/*/,spec/support/*/
 
 " Better rspec
-"let g:rspec_command = "!bundle exec rspec -f d -c {spec}"
 let g:rspec_command = "Dispatch rspec -f d -c {spec}"
 noremap <Leader>t :call RunCurrentSpecFile()<CR>
 noremap <Leader>s :call RunNearestSpec()<CR>
