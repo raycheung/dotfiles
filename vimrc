@@ -80,7 +80,6 @@ set smarttab
 
 set background=dark
 colorscheme gruvbox
-"colorscheme lucario
 
 " Fix crontab -e
 set backupskip=/tmp/*,/private/tmp/*
