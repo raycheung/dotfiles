@@ -90,7 +90,7 @@ autocmd BufWritePre * :%s/\s\+$//e
 
 " 100 times improvement for searching
 noremap // y/<C-r><C-w><CR>
-noremap /ag :Ag <C-r><C-w><CR>
+noremap /ag :Ag! <C-r><C-w><CR>
 noremap <silent> <C-l> :nohl<CR>
 
 " My gits
@@ -101,6 +101,9 @@ noremap <silent> <S-f> :Gfetch --all -p<CR>
 
 " Dashing
 nmap <silent> <leader>d <Plug>DashSearch
+
+" Better ag
+let g:aghighlight=1
 
 " Use ag for ctrlp
 let g:ctrlp_user_command = 'ag %s -l -g ""'
