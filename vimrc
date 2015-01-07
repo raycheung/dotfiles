@@ -38,6 +38,7 @@ NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'ervandew/supertab'
 NeoBundle 'tpope/vim-commentary'
 NeoBundle 'tpope/vim-surround'
+NeoBundle 'christoomey/vim-tmux-navigator'
 
 " Color schemes
 NeoBundle 'morhetz/gruvbox'
