@@ -1,0 +1,3 @@
+set main-view	= line-number:no,interval=5 id date:default author:full commit-title:yes,graph,refs,overflow=no
+set line-graphics = utf-8
+set vertical-split = horizontal
