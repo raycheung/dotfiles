@@ -91,6 +91,7 @@ autocmd BufWritePre * :%s/\s\+$//e
 
 " 100 times improvement for searching
 noremap // y/<C-r><C-w><CR>
+noremap /// y/<C-r>"<CR>
 noremap /ag :Ag! <C-r><C-w><CR>
 noremap <silent> <C-l> :nohl<CR>
 
