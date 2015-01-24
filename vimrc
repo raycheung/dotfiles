@@ -106,6 +106,11 @@ nmap <silent> <leader>d <Plug>DashSearch
 " Better ag
 let g:aghighlight=1
 
+let g:ctrlp_prompt_mappings = {
+  \ 'AcceptSelection("e")': ['<c-e>', '<2-LeftMouse>'],
+  \ 'AcceptSelection("h")': ['<cr>'],
+  \ }
+
 " Use ag for ctrlp
 let g:ctrlp_user_command = 'ag %s -l -g ""'
 
