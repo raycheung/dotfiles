@@ -45,7 +45,6 @@ NeoBundle 'morhetz/gruvbox'
 
 NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'kchmck/vim-coffee-script'
-"NeoBundle 'burnettk/vim-angular'
 
 NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'tpope/vim-bundler'
@@ -113,14 +112,12 @@ let g:ctrlp_user_command = 'ag %s -l -g ""'
 " Better NERDTree experience
 noremap <silent> <C-n> :NERDTreeToggle<CR>
 noremap <silent> ,n :NERDTreeFind<CR>
-"autocmd StdinReadPre * let s:std_in=1
-"autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | wincmd l | endif
 
 " Auto maximizing selected window
 let &winheight = &lines * 7 / 10
 
 " Better gf for rails
-set path+=lib/*/,spec/*/,spec/support/*/
+set path+=app/*/,lib/*/,spec/*/,spec/support/*/
 
 " Better rspec
 let g:rspec_command = "Dispatch bundle exec rspec -f d -c {spec}"
