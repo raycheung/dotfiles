@@ -45,7 +45,7 @@ ZSH_CUSTOM=~/.zsh-custom
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(brew git tmux bundler rbenv rails heroku)
+plugins=(terminalapp brew git tmux bundler rbenv rails heroku)
 
 # User configuration
 
@@ -84,3 +84,7 @@ export EDITOR='vim'
 
 # Use direnv
 eval "$(direnv hook zsh)"
+
+ZSH_TMUX_AUTOSTART=true
+ZSH_TMUX_AUTOSTART_ONCE=true
+ZSH_TMUX_AUTOQUIT=true
