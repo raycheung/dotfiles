@@ -95,9 +95,9 @@ noremap /ag :Ag! <C-r><C-w><CR>
 noremap <silent> <C-l> :nohl<CR>
 
 " My gits
-noremap <silent> <C-s> :Gstatus<CR>
+noremap <silent> <Leader>g :Gstatus<CR>
 noremap <silent> <S-t> :Start tig --all<CR>
-noremap <silent> <S-b> :Gbrowse<CR>
+noremap <silent> <Leader>b :Gbrowse<CR>
 noremap <silent> <S-f> :Gfetch --all -p<CR>
 
 " Dashing
