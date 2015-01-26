@@ -1,7 +1,3 @@
-if &shell =~# 'fish$'
-  set shell=bash
-endif
-
 if has('vim_starting')
   set nocompatible               " Be iMproved
 

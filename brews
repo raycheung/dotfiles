@@ -1,11 +1,9 @@
 chromedriver
 direnv
-fish
 ghostscript
 git
 heroku-toolbelt
 imagemagick
-markdown
 postgresql
 qt
 rcm
@@ -13,3 +11,4 @@ the_silver_searcher
 tig
 tmux
 vim
+zsh
