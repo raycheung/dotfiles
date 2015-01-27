@@ -42,6 +42,7 @@ NeoBundle 'morhetz/gruvbox'
 NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'kchmck/vim-coffee-script'
 
+NeoBundle 'tpope/vim-rbenv'
 NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'tpope/vim-bundler'
 NeoBundle 'tpope/vim-rails'
