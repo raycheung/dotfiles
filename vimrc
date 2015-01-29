@@ -1,7 +1,3 @@
-if &shell =~# 'fish$'
-  set shell=bash
-endif
-
 if has('vim_starting')
   set nocompatible               " Be iMproved
 
@@ -95,9 +91,9 @@ noremap /ag :Ag! <C-r><C-w><CR>
 noremap <silent> <C-l> :nohl<CR>
 
 " My gits
-noremap <silent> <C-s> :Gstatus<CR>
+noremap <silent> <Leader>g :Gstatus<CR>
 noremap <silent> <S-t> :Start tig --all<CR>
-noremap <silent> <S-b> :Gbrowse<CR>
+noremap <silent> <Leader>b :Gbrowse<CR>
 noremap <silent> <S-f> :Gfetch --all -p<CR>
 
 " Dashing
@@ -105,6 +101,11 @@ nmap <silent> <leader>d <Plug>DashSearch
 
 " Better ag
 let g:aghighlight=1
+
+let g:ctrlp_prompt_mappings = {
+  \ 'AcceptSelection("e")': ['<c-e>', '<2-LeftMouse>'],
+  \ 'AcceptSelection("h")': ['<cr>'],
+  \ }
 
 " Use ag for ctrlp
 let g:ctrlp_user_command = 'ag %s -l -g ""'
