@@ -85,6 +85,10 @@ set backupskip=/tmp/*,/private/tmp/*
 " Auto remove trailing whitespace
 autocmd BufWritePre * :%s/\s\+$//e
 
+" I just hate these modes
+map q <Nop>
+map Q <Nop>
+
 " 100 times improvement for searching
 noremap // y/<C-r><C-w><CR>
 noremap /// y/<C-r>"<CR>
