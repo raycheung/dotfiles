@@ -25,5 +25,5 @@ Check out good vim color schemes: http://cocopon.me/app/vim-color-gallery/
 ### My crontab
 
     35 9-17/2 * * 1-5 /usr/local/bin/brew update &> /dev/null
-    35 9-17/2 * * 1-5 (git -C ~/.rbenv pull && git -C ~/.rbenv/plugins/ruby-build pull) &> /dev/null
-    35 9-17/2 * * 1-5 (git -C ~/.ndenv pull && git -C ~/.ndenv/plugins/node-build pull) &> /dev/null
+    35 9-17/2 * * 1-5 (git -C ~/.rbenv pull; git -C ~/.rbenv/plugins/ruby-build pull) &> /dev/null
+    35 9-17/2 * * 1-5 (git -C ~/.ndenv pull; git -C ~/.ndenv/plugins/node-build pull) &> /dev/null
