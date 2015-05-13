@@ -39,6 +39,7 @@ NeoBundle 'christoomey/vim-tmux-navigator'
 " Color schemes
 NeoBundle 'morhetz/gruvbox'
 
+NeoBundle 'scrooloose/syntastic'
 NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'kchmck/vim-coffee-script'
 
@@ -121,6 +122,15 @@ noremap <silent> ,n :NERDTreeFind<CR>
 
 " Auto maximizing selected window
 let &winheight = &lines * 7 / 10
+
+" Enable syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 " Better gf for rails
 set path+=app/*/,lib/*/,spec/*/,spec/support/*/
