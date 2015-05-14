@@ -96,6 +96,10 @@ noremap /// y/<C-r>"<CR>
 noremap /ag :Ag! <C-r><C-w><CR>
 noremap <silent> <C-l> :nohl<CR>
 
+" I need to toggle these too often
+set pastetoggle=<Leader>p
+noremap <silent> <Leader>n :set invnumber<CR>
+
 " My gits
 noremap <silent> <Leader>g :Gstatus<CR>
 noremap <silent> <S-t> :Start tig --all<CR>
