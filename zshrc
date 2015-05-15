@@ -91,3 +91,5 @@ eval "$(direnv hook zsh)"
 ZSH_TMUX_AUTOSTART=true
 ZSH_TMUX_AUTOSTART_ONCE=true
 ZSH_TMUX_AUTOQUIT=true
+
+alias post_json='curl -X POST -H "Content-Type: application/json"'
