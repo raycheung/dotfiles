@@ -49,6 +49,8 @@ plugins=(terminalapp brew git tmux bundler rbenv rails rake heroku pyenv)
 
 # User configuration
 
+export ZSH_TMUX_AUTOSTART=true
+
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 
