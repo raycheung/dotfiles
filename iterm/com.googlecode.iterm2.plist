@@ -1185,7 +1185,7 @@
 	<key>MaxVertically</key>
 	<false/>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/Downloads/mbadolato-iTerm2-Color-Schemes-6442ae6/schemes</string>
+	<string>~/Documents</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{712, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
@@ -1194,27 +1194,16 @@
 	<string></string>
 	<key>NSScrollAnimationEnabled</key>
 	<false/>
-	<key>NSTableView Columns KeyBingingTable</key>
-	<array>
-		<data>
-		BAtzdHJlYW10eXBlZIHoA4QBQISEhAhOU1N0cmluZwGEhAhOU09iamVjdACF
-		hAErATCG
-		</data>
-		<string>198</string>
-		<data>
-		BAtzdHJlYW10eXBlZIHoA4QBQISEhAhOU1N0cmluZwGEhAhOU09iamVjdACF
-		hAErATGG
-		</data>
-		<string>302</string>
-	</array>
-	<key>NSTableView Hidden Columns KeyBingingTable</key>
-	<array/>
-	<key>NSTableView Sort Ordering KeyBingingTable</key>
-	<array/>
 	<key>NSWindow Frame Preferences</key>
-	<string>190 240 924 485 0 0 1440 900 </string>
+	<string>290 272 924 485 0 0 1280 800 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>162 91 570 451 0 0 1440 877 </string>
+	<string>0 326 585 451 0 0 1280 777 </string>
+	<key>NSWindow Frame iTerm Window 1</key>
+	<string>463 219 585 451 0 0 1280 777 </string>
+	<key>NSWindow Frame iTerm Window 2</key>
+	<string>247 20 1278 757 0 0 1280 777 </string>
+	<key>NSWindow Frame iTerm Window 3</key>
+	<string>2 4 1278 774 0 0 1280 800 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -2142,7 +2131,7 @@
 			<key>Disable Window Resizing</key>
 			<true/>
 			<key>Flashing Bell</key>
-			<true/>
+			<false/>
 			<key>Foreground Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -2168,7 +2157,6 @@
 				<string>ssh</string>
 				<string>slogin</string>
 				<string>telnet</string>
-				<string>tmux</string>
 			</array>
 			<key>Keyboard Map</key>
 			<dict>
@@ -2614,9 +2602,9 @@
 		</dict>
 	</array>
 	<key>NoSyncTimeOfLastPromo</key>
-	<real>454950110.08815801</real>
+	<real>454907847.396815</real>
 	<key>NoSyncTimeOfLastPromoDownload</key>
-	<real>454950110.08839798</real>
+	<real>455426288.86161798</real>
 	<key>OnlyWhenMoreTabs</key>
 	<false/>
 	<key>OpenArrangementAtStartup</key>
@@ -2681,7 +2669,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-06-02T15:01:22Z</date>
+	<date>2015-06-08T03:16:29Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
