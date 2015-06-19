@@ -137,7 +137,7 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 " Better gf for rails
-set path+=app/*/,lib/*/,spec/*/,spec/support/*/
+set path+=app/**/,lib/*/,spec/*/,spec/support/*/
 
 " Better rspec
 let g:rspec_command = "Dispatch bundle exec rspec -f d -c {spec}"
