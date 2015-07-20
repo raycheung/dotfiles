@@ -89,5 +89,3 @@ export LANG=en_US.UTF-8
 
 # Use direnv
 eval "$(direnv hook zsh)"
-
-alias post_json='curl -X POST -H "Content-Type: application/json"'
