@@ -48,6 +48,7 @@ NeoBundle 'tpope/vim-rbenv'
 NeoBundle 'tpope/vim-bundler'
 NeoBundle 'tpope/vim-rails'
 NeoBundle 'tpope/vim-rake'
+NeoBundle 'skalnik/vim-vroom'
 
 " Dash
 NeoBundle 'rizzatti/dash.vim'
@@ -153,12 +154,11 @@ autocmd BufNewFile,BufRead *.scss let b:commentary_format='//%s'
 " Better gf for rails
 set path+=app/**/,lib/**/,spec/**/
 
-" Better rspec
-let g:rspec_command = "Dispatch bundle exec rspec -f d -c {spec}"
-noremap <Leader>t :call RunCurrentSpecFile()<CR>
-noremap <Leader>s :call RunNearestSpec()<CR>
-noremap <Leader>l :call RunLastSpec()<CR>
-noremap <Leader>a :call RunAllSpecs()<CR>
+" Better vroom
+let g:vroom_use_dispatch = 1
+noremap <Leader>t :VroomRunTestFile<CR>
+noremap <Leader>s :VroomRunNearestTest<CR>
+noremap <Leader>l :VroomRunLastTest<CR>
 
 " Convert hash rockets syntax
 noremap <Leader>cc :%s/:\([^=,'"]*\) =>/\1:/gc<CR>
