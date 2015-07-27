@@ -94,11 +94,12 @@ map Q <Nop>
 noremap // y/<C-r><C-w><CR>
 noremap /// y/<C-r>"<CR>
 noremap /ag :Ag! <C-r><C-w><CR>
-noremap <silent> <C-l> :nohl<CR>
+noremap <silent> <Leader>l :nohl<CR>
 
 " I need to toggle these too often
 set pastetoggle=<Leader>p
 noremap <silent> <Leader>n :set invnumber<CR>
+noremap <silent> <Leader>w :set wrap!<CR>
 
 " My gits
 noremap <silent> <Leader>g :Gstatus<CR>
