@@ -94,7 +94,7 @@ map Q <Nop>
 noremap // y/<C-r><C-w><CR>
 noremap /// y/<C-r>"<CR>
 noremap /ag :Ag! <C-r><C-w><CR>
-noremap <silent> <Leader>l :nohl<CR>
+noremap <silent> <Leader>/ :nohl<CR>
 
 " I need to toggle these too often
 set pastetoggle=<Leader>p
