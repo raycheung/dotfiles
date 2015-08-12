@@ -163,4 +163,8 @@ noremap <Leader>l :call RunLastSpec()<CR>
 noremap <Leader>a :call RunAllSpecs()<CR>
 
 " Convert hash rockets syntax
-nnoremap <Leader>cc :%s/:\([^=,'"]*\) =>/\1:/gc<CR>
+noremap <Leader>cc :%s/:\([^=,'"]*\) =>/\1:/gc<CR>
+
+" We have custom extension
+autocmd BufNewFile,BufRead *.opal set syntax=ruby
+autocmd BufNewFile,BufRead *.opal let b:commentary_format='#%s'
