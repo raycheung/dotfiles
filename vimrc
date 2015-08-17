@@ -126,6 +126,7 @@ let g:ctrlp_user_command = 'ag %s -l -g ""'
 
 " Better NERDTree experience
 nmap <C-n> :NERDTreeToggle<CR>
+noremap <silent> ,n :NERDTreeFind<CR>
 
 " Auto maximizing selected window
 let &winheight = &lines * 7 / 10
