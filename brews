@@ -1,12 +1,12 @@
 chromedriver
+cmake
 direnv
-ghostscript
 git
 heroku-toolbelt
-imagemagick
+libtool
+libyaml
 postgresql
-qt
-rcm
+thoughtbot/formulae/rcm
 the_silver_searcher
 tig
 tmux
