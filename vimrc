@@ -35,6 +35,8 @@ NeoBundle 'ervandew/supertab'
 NeoBundle 'tpope/vim-commentary'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'christoomey/vim-tmux-navigator'
+NeoBundle 'szw/vim-tags'
+NeoBundle 'majutsushi/tagbar'
 
 " Color schemes
 NeoBundle 'morhetz/gruvbox'
@@ -70,6 +72,7 @@ set ruler
 set cursorline
 set hlsearch
 set incsearch
+set laststatus=2
 
 set backspace=2
 set tabstop=2
@@ -122,8 +125,7 @@ let g:ctrlp_prompt_mappings = {
 let g:ctrlp_user_command = 'ag %s -l -g ""'
 
 " Better NERDTree experience
-noremap <silent> <C-n> :NERDTreeToggle<CR>
-noremap <silent> ,n :NERDTreeFind<CR>
+nmap <C-n> :NERDTreeToggle<CR>
 
 " Auto maximizing selected window
 let &winheight = &lines * 7 / 10
@@ -147,3 +149,11 @@ noremap <Leader>t :call RunCurrentSpecFile()<CR>
 noremap <Leader>s :call RunNearestSpec()<CR>
 noremap <Leader>l :call RunLastSpec()<CR>
 noremap <Leader>a :call RunAllSpecs()<CR>
+
+" For tags
+let g:vim_tags_auto_generate = 1
+let g:vim_tags_use_vim_dispatch = 1
+let g:tagbar_autopreview = 1
+let g:tagbar_autofocus = 1
+let g:tagbar_autoclose = 1
+nmap <C-t> :TagbarToggle<CR>
