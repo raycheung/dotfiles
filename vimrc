@@ -29,13 +29,13 @@ NeoBundle 'tpope/vim-dispatch'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'kien/ctrlp.vim'
+NeoBundle 'tacahiroy/ctrlp-funky'
 NeoBundle 'rking/ag.vim'
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'ervandew/supertab'
 NeoBundle 'tpope/vim-commentary'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'christoomey/vim-tmux-navigator'
-NeoBundle 'tacahiroy/ctrlp-funky'
 
 " Color schemes
 NeoBundle 'morhetz/gruvbox'
@@ -135,9 +135,6 @@ noremap <silent> ,n :NERDTreeFind<CR>
 let &winheight = &lines * 7 / 10
 
 " Enable syntastic
-" set statusline+=%#warningmsg#
-" set statusline+=%{SyntasticStatuslineFlag()}
-" set statusline+=%*
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
