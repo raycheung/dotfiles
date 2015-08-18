@@ -89,25 +89,29 @@ set backupskip=/tmp/*,/private/tmp/*
 autocmd BufWritePre * :%s/\s\+$//e
 
 " I just hate these modes
-map q <Nop>
-map Q <Nop>
+nmap q <Nop>
+nmap Q <Nop>
 
 " 100 times improvement for searching
-noremap // y/<C-r><C-w><CR>
-noremap /// y/<C-r>"<CR>
-noremap /ag :Ag! <C-r><C-w><CR>
-noremap <silent> <Leader>/ :nohl<CR>
+nnoremap // y/<C-r><C-w><CR>
+nnoremap /// y/<C-r>"<CR>
+nnoremap /ag :Ag! <C-r><C-w><CR>
+nnoremap <silent> <Leader>/ :nohl<CR>
+
+" and 100 times better for copying
+nnoremap <silent> <Leader><Leader>y "*y
+nnoremap <silent> <Leader><Leader>p "*p
 
 " I need to toggle these too often
 set pastetoggle=<Leader>p
-noremap <silent> <Leader>n :set invnumber<CR>
-noremap <silent> <Leader>w :set wrap!<CR>
+nnoremap <silent> <Leader>n :set invnumber<CR>
+nnoremap <silent> <Leader>w :set wrap!<CR>
 
 " My gits
-noremap <silent> <Leader>g :Gstatus<CR>
-noremap <silent> <S-t> :Start tig --all<CR>
-noremap <silent> <Leader>b :Gbrowse<CR>
-noremap <silent> <S-f> :Gfetch --all -p<CR>
+nnoremap <silent> <Leader>g :Gstatus<CR>
+nnoremap <silent> <S-t> :Start tig --all<CR>
+nnoremap <silent> <Leader>b :Gbrowse<CR>
+nnoremap <silent> <S-f> :Gfetch --all -p<CR>
 
 " Dashing
 nmap <silent> <leader>d <Plug>DashSearch
@@ -128,8 +132,8 @@ nnoremap <Leader>fu :CtrlPFunky<CR>
 nnoremap <Leader>fU :execute 'CtrlPFunky ' . expand('<cword>')<CR>
 
 " Better NERDTree experience
-nmap <C-n> :NERDTreeToggle<CR>
-noremap <silent> ,n :NERDTreeFind<CR>
+nnoremap <C-n> :NERDTreeToggle<CR>
+nnoremap <silent> ,n :NERDTreeFind<CR>
 
 " Auto maximizing selected window
 let &winheight = &lines * 7 / 10
@@ -142,7 +146,7 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_haml_checkers = ['haml_lint']
 
 " Better gf for rails
-set path+=app/**/,lib/*/,spec/*/,spec/support/*/
+set path+=app/**/,lib/**/,spec/**/
 
 " Better rspec
 let g:rspec_command = "Dispatch bundle exec rspec -f d -c {spec}"
@@ -150,3 +154,6 @@ noremap <Leader>t :call RunCurrentSpecFile()<CR>
 noremap <Leader>s :call RunNearestSpec()<CR>
 noremap <Leader>l :call RunLastSpec()<CR>
 noremap <Leader>a :call RunAllSpecs()<CR>
+
+" Convert hash rockets syntax
+nnoremap <Leader>cc :%s/:\([^=,'"]*\) =>/\1:/gc<CR>
