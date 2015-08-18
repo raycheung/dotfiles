@@ -35,8 +35,6 @@ NeoBundle 'ervandew/supertab'
 NeoBundle 'tpope/vim-commentary'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'christoomey/vim-tmux-navigator'
-NeoBundle 'szw/vim-tags'
-NeoBundle 'majutsushi/tagbar'
 NeoBundle 'tacahiroy/ctrlp-funky'
 
 " Color schemes
@@ -155,11 +153,3 @@ noremap <Leader>t :call RunCurrentSpecFile()<CR>
 noremap <Leader>s :call RunNearestSpec()<CR>
 noremap <Leader>l :call RunLastSpec()<CR>
 noremap <Leader>a :call RunAllSpecs()<CR>
-
-" For tags
-let g:vim_tags_auto_generate = 1
-let g:vim_tags_use_vim_dispatch = 1
-let g:tagbar_autopreview = 1
-let g:tagbar_autofocus = 1
-let g:tagbar_autoclose = 1
-nmap <C-t> :TagbarToggle<CR>
