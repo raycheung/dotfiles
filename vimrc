@@ -37,6 +37,7 @@ NeoBundle 'tpope/vim-surround'
 NeoBundle 'christoomey/vim-tmux-navigator'
 NeoBundle 'szw/vim-tags'
 NeoBundle 'majutsushi/tagbar'
+NeoBundle 'tacahiroy/ctrlp-funky'
 
 " Color schemes
 NeoBundle 'morhetz/gruvbox'
@@ -123,6 +124,10 @@ let g:ctrlp_prompt_mappings = {
 
 " Use ag for ctrlp
 let g:ctrlp_user_command = 'ag %s -l -g ""'
+
+" Let ctrlp search within file
+nnoremap <Leader>fu :CtrlPFunky<CR>
+nnoremap <Leader>fU :execute 'CtrlPFunky ' . expand('<cword>')<CR>
 
 " Better NERDTree experience
 nmap <C-n> :NERDTreeToggle<CR>
