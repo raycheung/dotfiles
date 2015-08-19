@@ -145,6 +145,9 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_haml_checkers = ['haml_lint']
 
+" '-' (dash) is not a word separator for me
+set iskeyword+=-
+
 " Better gf for rails
 set path+=app/**/,lib/**/,spec/**/
 
