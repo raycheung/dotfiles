@@ -38,7 +38,7 @@ NeoBundle 'tpope/vim-surround'
 NeoBundle 'christoomey/vim-tmux-navigator'
 
 " Color schemes
-NeoBundle 'morhetz/gruvbox'
+NeoBundle 'NLKNguyen/papercolor-theme'
 
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'pangloss/vim-javascript'
@@ -80,7 +80,7 @@ set expandtab
 set smarttab
 
 set background=dark
-colorscheme gruvbox
+colorscheme PaperColor
 
 " Fix crontab -e
 set backupskip=/tmp/*,/private/tmp/*
