@@ -144,6 +144,7 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_haml_checkers = ['haml_lint']
+let g:syntastic_sass_checkers = []
 
 " '-' (dash) is not a word separator for me
 set iskeyword+=-
