@@ -40,18 +40,13 @@ NeoBundle 'christoomey/vim-tmux-navigator'
 " Color schemes
 NeoBundle 'NLKNguyen/papercolor-theme'
 
+NeoBundle 'sheerun/vim-polyglot'
 NeoBundle 'scrooloose/syntastic'
-NeoBundle 'pangloss/vim-javascript'
-NeoBundle 'kchmck/vim-coffee-script'
 
 NeoBundle 'tpope/vim-rbenv'
-NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'tpope/vim-bundler'
 NeoBundle 'tpope/vim-rails'
 NeoBundle 'tpope/vim-rake'
-NeoBundle 'thoughtbot/vim-rspec'
-
-NeoBundle 'plasticboy/vim-markdown'
 
 " Dash
 NeoBundle 'rizzatti/dash.vim'
