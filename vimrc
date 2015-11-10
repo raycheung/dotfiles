@@ -29,7 +29,6 @@ NeoBundle 'tpope/vim-dispatch'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'kien/ctrlp.vim'
-NeoBundle 'tacahiroy/ctrlp-funky'
 NeoBundle 'rking/ag.vim'
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'ervandew/supertab'
@@ -123,10 +122,6 @@ let g:ctrlp_prompt_mappings = {
 
 " Use ag for ctrlp
 let g:ctrlp_user_command = 'ag %s -l -g ""'
-
-" Let ctrlp search within file
-nnoremap <Leader>fu :CtrlPFunky<CR>
-nnoremap <Leader>fU :execute 'CtrlPFunky ' . expand('<cword>')<CR>
 
 " Better NERDTree experience
 nnoremap <C-n> :NERDTreeToggle<CR>
