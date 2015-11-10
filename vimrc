@@ -156,12 +156,12 @@ set path+=app/**/,lib/**/,spec/**/
 
 " Better vroom
 let g:vroom_use_dispatch = 1
-noremap <Leader>t :VroomRunTestFile<CR>
-noremap <Leader>s :VroomRunNearestTest<CR>
-noremap <Leader>l :VroomRunLastTest<CR>
+nnoremap <Leader>t :VroomRunTestFile<CR>
+nnoremap <Leader>s :VroomRunNearestTest<CR>
+nnoremap <Leader>l :VroomRunLastTest<CR>
 
 " Convert hash rockets syntax
-noremap <Leader>cc :%s/:\([^=,'"]*\) =>/\1:/gc<CR>
+nnoremap <Leader>cc :%s/:\([^=,'"]*\) =>/\1:/gc<CR>
 
 " We have custom extension
 autocmd BufNewFile,BufRead *.opal set syntax=ruby
