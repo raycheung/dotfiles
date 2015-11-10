@@ -1,14 +1,15 @@
 chromedriver
-cmake
 direnv
 git
 heroku-toolbelt
-libtool
 libyaml
 postgresql
+qt
 thoughtbot/formulae/rcm
+redis
 the_silver_searcher
 tig
 tmux
+v8
 vim
 zsh
