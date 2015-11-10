@@ -113,7 +113,7 @@ nnoremap <silent> <S-f> :Gfetch --all -p<CR>
 nmap <silent> <leader>d <Plug>DashSearch
 
 " Better ag
-let g:aghighlight=1
+let g:ag_highlight=1
 
 let g:ctrlp_prompt_mappings = {
   \ 'AcceptSelection("e")': ['<c-e>', '<2-LeftMouse>'],
