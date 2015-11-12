@@ -95,7 +95,7 @@ nnoremap /ag :Ag! '<C-r>"'<CR>
 nnoremap <silent> <Leader>/ :nohl<CR>
 
 " and 100 times better for copying
-nnoremap <silent> <Leader><Leader>y "*y
+vnoremap <silent> <Leader><Leader>y "*y
 nnoremap <silent> <Leader><Leader>p "*p
 
 " I need to toggle these too often
