@@ -91,7 +91,7 @@ nmap Q <Nop>
 " 100 times improvement for searching
 nnoremap // y/<C-r><C-w><CR>
 vnoremap // y/<C-r>"<CR>
-nnoremap /ag :Ag! '<C-r>"'<CR>
+nnoremap /ag :Ag! '<C-r>/'<CR>
 nnoremap <silent> <Leader>/ :nohl<CR>
 
 " and 100 times better for copying
