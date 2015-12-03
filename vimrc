@@ -142,10 +142,6 @@ let g:syntastic_sass_checkers = []
 " '-' (dash) is not a word separator for me
 set iskeyword+=-
 
-" Define how I write comments
-autocmd BufNewFile,BufRead *.rb,*.coffee let b:commentary_format='#%s'
-autocmd BufNewFile,BufRead *.scss let b:commentary_format='//%s'
-
 " Better gf for rails
 set path+=app/**/,lib/**/,spec/**/
 
