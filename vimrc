@@ -150,17 +150,15 @@ autocmd BufNewFile,BufRead *.scss let b:commentary_format='//%s'
 set path+=app/**/,lib/**/,spec/**/
 
 " Better vroom
+let g:vroom_detect_spec_helper = 1
 let g:vroom_use_dispatch = 1
+
 nnoremap <Leader>t :VroomRunTestFile<CR>
 nnoremap <Leader>s :VroomRunNearestTest<CR>
 nnoremap <Leader>l :VroomRunLastTest<CR>
 
 " Convert hash rockets syntax
 nnoremap <Leader>cc :%s/:\([^=,'"]*\) =>/\1:/gc<CR>
-
-" We have custom extension
-autocmd BufNewFile,BufRead *.opal set syntax=ruby
-autocmd BufNewFile,BufRead *.opal let b:commentary_format='#%s'
 
 " Formatting cucumber table
 inoremap <silent> <Bar>   <Bar><Esc>:call <SID>align()<CR>a
@@ -174,3 +172,7 @@ function! s:align()
     call search(repeat('[^|]*|',column).'\s\{-\}'.repeat('.',position),'ce',line('.'))
   endif
 endfunction
+
+" We have custom extension
+autocmd BufNewFile,BufRead *.opal set syntax=ruby
+autocmd BufNewFile,BufRead *.opal let b:commentary_format='#%s'
