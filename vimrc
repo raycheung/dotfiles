@@ -171,4 +171,4 @@ endfunction
 
 " We have custom extension
 autocmd BufNewFile,BufRead *.opal set syntax=ruby
-autocmd BufNewFile,BufRead *.opal let b:commentary_format='#%s'
+autocmd BufNewFile,BufRead *.opal let b:commentary_format='# %s'
