@@ -6,3 +6,7 @@
 	path = zprezto
 	url = https://github.com/sorin-ionescu/prezto.git
 	branch = master
+[submodule "tmux/plugins/tpm"]
+	path = tmux/plugins/tpm
+	url = https://github.com/tmux-plugins/tpm.git
+	branch = master
