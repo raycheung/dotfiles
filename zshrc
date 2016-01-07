@@ -11,6 +11,8 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+
+# for direnv
 _direnv_hook() {
   eval "$(direnv export zsh)";
 }
@@ -18,3 +20,7 @@ typeset -ag precmd_functions
 if [[ -z $precmd_functions[(r)_direnv_hook] ]]; then
   precmd_functions+=_direnv_hook;
 fi
+
+# for ndenv
+export PATH="$HOME/.ndenv/bin:$PATH"
+eval "$(ndenv init -)"
