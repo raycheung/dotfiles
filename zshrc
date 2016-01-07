@@ -12,6 +12,9 @@ fi
 
 # Customize to your needs...
 
+# for binstubs
+export PATH="./bin:$PATH"
+
 # for direnv
 _direnv_hook() {
   eval "$(direnv export zsh)";
