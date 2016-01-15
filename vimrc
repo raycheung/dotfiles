@@ -36,6 +36,7 @@ NeoBundle 'tpope/vim-commentary'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'christoomey/vim-tmux-navigator'
 NeoBundle 'godlygeek/tabular'
+NeoBundle 'powerman/vim-plugin-AnsiEsc'
 
 " Color schemes
 NeoBundle 'NLKNguyen/papercolor-theme'
@@ -173,3 +174,5 @@ endfunction
 " We have custom extension
 autocmd BufNewFile,BufRead *.opal set syntax=ruby
 autocmd BufNewFile,BufRead *.opal let b:commentary_format='# %s'
+
+autocmd BufReadPost quickfix AnsiEsc
