@@ -82,6 +82,9 @@ colorscheme PaperColor
 " Fix crontab -e
 set backupskip=/tmp/*,/private/tmp/*
 
+" Mouse mode
+set mouse=a
+
 " Auto remove trailing whitespace
 autocmd BufWritePre * :%s/\s\+$//e
 
