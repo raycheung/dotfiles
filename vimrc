@@ -84,6 +84,7 @@ set backupskip=/tmp/*,/private/tmp/*
 
 " Mouse mode
 set mouse=a
+set ttymouse=xterm2
 
 " Auto remove trailing whitespace
 autocmd BufWritePre * :%s/\s\+$//e
