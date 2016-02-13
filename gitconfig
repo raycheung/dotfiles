@@ -6,3 +6,5 @@
 	editor = /usr/bin/vim
 [push]
 	default = simple
+[gui]
+	pruneduringfetch = true
