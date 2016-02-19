@@ -37,6 +37,7 @@ NeoBundle 'tpope/vim-surround'
 NeoBundle 'christoomey/vim-tmux-navigator'
 NeoBundle 'godlygeek/tabular'
 NeoBundle 'powerman/vim-plugin-AnsiEsc'
+NeoBundle 'junegunn/vim-easy-align'
 
 " Color schemes
 NeoBundle 'marcopaganini/termschool-vim-theme'
@@ -92,6 +93,10 @@ autocmd BufWritePre * :%s/\s\+$//e
 " I just hate these modes
 nmap q <Nop>
 nmap Q <Nop>
+
+" EasyAlign
+nmap ga <Plug>(EasyAlign)
+xmap ga <Plug>(EasyAlign)
 
 " 100 times improvement for searching
 nnoremap // y/<C-r><C-w><CR>
