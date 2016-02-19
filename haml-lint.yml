@@ -4,3 +4,6 @@ linters:
 
   SpaceInsideHashAttributes:
     enabled: false
+
+  ObjectReferenceAttributes:
+    enabled: false
