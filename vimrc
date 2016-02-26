@@ -152,7 +152,6 @@ set iskeyword+=-
 set path+=app/**/,lib/**/,spec/**/
 
 " Better vroom
-let g:vroom_detect_spec_helper = 1
 let g:vroom_use_dispatch = 1
 
 nnoremap <Leader>t :VroomRunTestFile<CR>
