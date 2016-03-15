@@ -39,7 +39,7 @@ NeoBundle 'godlygeek/tabular'
 NeoBundle 'powerman/vim-plugin-AnsiEsc'
 
 " Color schemes
-NeoBundle 'NLKNguyen/papercolor-theme'
+NeoBundle 'marcopaganini/termschool-vim-theme'
 
 NeoBundle 'sheerun/vim-polyglot'
 NeoBundle 'scrooloose/syntastic'
@@ -77,7 +77,7 @@ set expandtab
 set smarttab
 
 set background=dark
-colorscheme PaperColor
+colorscheme termschool
 
 " Fix crontab -e
 set backupskip=/tmp/*,/private/tmp/*
