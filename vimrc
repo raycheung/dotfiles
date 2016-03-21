@@ -157,6 +157,7 @@ let g:vroom_use_dispatch = 1
 nnoremap <Leader>t :VroomRunTestFile<CR>
 nnoremap <Leader>s :VroomRunNearestTest<CR>
 nnoremap <Leader>l :VroomRunLastTest<CR>
+nnoremap <Leader>r :Start rubocop<CR>
 
 " Convert hash rockets syntax
 nnoremap <Leader>cc :%s/:\([^=,'"]*\) =>/\1:/gc<CR>
