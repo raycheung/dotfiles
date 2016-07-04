@@ -26,6 +26,7 @@ NeoBundle 'Shougo/vimproc.vim', {
 
 " Bundles
 NeoBundle 'tpope/vim-dispatch'
+NeoBundle 'tpope/vim-obsession'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'kien/ctrlp.vim'
