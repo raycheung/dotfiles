@@ -12,7 +12,7 @@ Check out good vim color schemes: http://cocopon.me/app/vim-color-gallery/
     git clone --recursive http://github.com/raycheung/dotfiles ~/.dotfiles
     bash -c 'ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"'
     cat ~/.dotfiles/brews | xargs brew install
-    env RCRC=~/.dotfiles/rcrc rcup -f -v
+    env RCRC=~/.dotfiles/rcrc rcup -x README.md -f -v
     direnv allow .
     git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
     git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
