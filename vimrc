@@ -48,6 +48,7 @@ NeoBundle 'scrooloose/syntastic'
 NeoBundle 'tpope/vim-rbenv'
 NeoBundle 'tpope/vim-bundler'
 NeoBundle 'tpope/vim-rails'
+NeoBundle 'tpope/vim-cucumber'
 NeoBundle 'tpope/vim-rake'
 NeoBundle 'skalnik/vim-vroom'
 
