@@ -1,10 +1,9 @@
 [user]
 	name = Ray Cheung
-	email = github@pragmatic.hk
+	email = ray.cheung@segantii.com
 [core]
-	excludesFile = C:/Users/ray.cheung/.gitignore_global
-	editor = \"C:/Program Files (x86)/GitExtensions/GitExtensions.exe\" fileeditor
-	autocrlf = input
+	excludesfile = /home/ray/.gitignore_global
+	editor = /usr/bin/vim
 [push]
 	default = simple
 [gui]
