@@ -18,7 +18,6 @@ Check out good vim color schemes: http://cocopon.me/app/vim-color-gallery/
     git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
     git clone https://github.com/riywo/ndenv ~/.ndenv
     git clone https://github.com/riywo/node-build.git ~/.ndenv/plugins/node-build
-    git clone https://github.com/yyuu/pyenv.git ~/.pyenv
 
 ------
 
