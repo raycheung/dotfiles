@@ -1,8 +1,8 @@
 [user]
 	name = Ray Cheung
-	email = ray.swc@gmail.com
+	email = ray.cheung@segantii.com
 [core]
-	excludesfile = /Users/ray/.gitignore_global
+	excludesfile = /home/ray/.gitignore_global
 	editor = /usr/bin/vim
 [push]
 	default = simple
