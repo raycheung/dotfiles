@@ -1,10 +1,9 @@
 [user]
 	name = Ray Cheung
-	email = github@pragmatic.hk
+	email = ray.cheung@segantii.com
 [core]
-	excludesFile = C:/Users/huracan/.gitignore
-	editor = \"C:/Users/huracan/scoop/apps/gitextensions/current\" fileeditor
-	autocrlf = input
+	excludesfile = /home/ray/.gitignore
+	editor = /usr/bin/vim
 [push]
 	default = simple
 [gui]
@@ -27,5 +26,3 @@
 	guitool = kdiff3
 [mergetool "kdiff3"]
 	cmd = \"\" \"$BASE\" \"$LOCAL\" \"$REMOTE\" -o \"$MERGED\"
-[http]
-	proxy = socks5://10.124.1.22:1080
