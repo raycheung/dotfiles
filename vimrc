@@ -1,70 +1,40 @@
-if has('vim_starting')
-  set nocompatible               " Be iMproved
+call plug#begin('~/.vim/plugged')
 
-  " Required:
-  set runtimepath+=~/.vim/bundle/neobundle.vim/
-endif
+Plug 'tpope/vim-dispatch'
+Plug 'tpope/vim-obsession'
+Plug 'tpope/vim-fugitive'
+Plug 'scrooloose/nerdtree'
+Plug 'kien/ctrlp.vim'
+Plug 'rking/ag.vim'
+Plug 'Lokaltog/vim-easymotion'
+Plug 'ervandew/supertab'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-surround'
+Plug 'godlygeek/tabular'
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'powerman/vim-plugin-AnsiEsc'
 
-set encoding=utf-8
-set termencoding=utf-8
-
-" Required:
-call neobundle#begin(expand('~/.vim/bundle/'))
-
-" Let NeoBundle manage NeoBundle
-" Required:
-NeoBundleFetch 'Shougo/neobundle.vim'
-
-NeoBundle 'Shougo/vimproc.vim', {
-      \ 'build' : {
-      \     'windows' : 'tools\\update-dll-mingw',
-      \     'cygwin' : 'make -f make_cygwin.mak',
-      \     'mac' : 'make -f make_mac.mak',
-      \     'unix' : 'make -f make_unix.mak',
-      \    },
-      \ }
-
-" Bundles
-NeoBundle 'tpope/vim-dispatch'
-NeoBundle 'tpope/vim-obsession'
-NeoBundle 'tpope/vim-fugitive'
-NeoBundle 'scrooloose/nerdtree'
-NeoBundle 'kien/ctrlp.vim'
-NeoBundle 'rking/ag.vim'
-NeoBundle 'Lokaltog/vim-easymotion'
-NeoBundle 'ervandew/supertab'
-NeoBundle 'tpope/vim-commentary'
-NeoBundle 'tpope/vim-surround'
-NeoBundle 'christoomey/vim-tmux-navigator'
-NeoBundle 'godlygeek/tabular'
-NeoBundle 'powerman/vim-plugin-AnsiEsc'
-
-" Color schemes
-NeoBundle 'marcopaganini/termschool-vim-theme'
-
-NeoBundle 'sheerun/vim-polyglot'
-NeoBundle 'scrooloose/syntastic'
-
-NeoBundle 'tpope/vim-rbenv'
-NeoBundle 'tpope/vim-bundler'
-NeoBundle 'tpope/vim-rails'
-NeoBundle 'tpope/vim-cucumber'
-NeoBundle 'tpope/vim-rake'
-NeoBundle 'skalnik/vim-vroom'
+Plug 'sheerun/vim-polyglot'
+Plug 'scrooloose/syntastic'
 
 " Dash
-NeoBundle 'rizzatti/dash.vim'
+Plug 'rizzatti/dash.vim'
 
-call neobundle#end()
+" Color schemes
+Plug 'marcopaganini/termschool-vim-theme'
 
-" Required:
-filetype plugin indent on
+Plug 'tpope/vim-rbenv'
+Plug 'tpope/vim-bundler'
+Plug 'tpope/vim-rails'
+Plug 'tpope/vim-rake'
+Plug 'tpope/vim-cucumber'
+Plug 'skalnik/vim-vroom'
 
-" If there are uninstalled bundles found on startup,
-" this will conveniently prompt you to install them.
-NeoBundleCheck
+call plug#end()
 
 syntax enable
+set encoding=utf-8
+set termencoding=utf-8
 set number
 set ruler
 set cursorline
