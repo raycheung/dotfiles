@@ -20,9 +20,6 @@ Plug 'sheerun/vim-polyglot'
 Plug 'scrooloose/syntastic'
 Plug 'janko-m/vim-test'
 
-" Dash
-Plug 'rizzatti/dash.vim'
-
 " Color schemes
 Plug 'chriskempson/base16-vim'
 
@@ -103,9 +100,6 @@ nnoremap <silent> <leader>g :Gstatus<CR>
 nnoremap <silent> <S-t> :Start tig --all<CR>
 nnoremap <silent> <leader>b :Gbrowse<CR>
 nnoremap <silent> <S-f> :Gfetch --all -p<CR>
-
-" Dashing
-nmap <silent> <leader>d <Plug>DashSearch
 
 " Better ag
 let g:ag_highlight=1
