@@ -27,3 +27,11 @@ fi
 # for ndenv
 export PATH="$HOME/.ndenv/bin:$PATH"
 eval "$(ndenv init -)"
+
+# for erlenv
+export PATH="$HOME/.erlenv/bin:$PATH"
+eval "$(erlenv init -)"
+
+# for exenv
+export PATH="$HOME/.exenv/bin:$PATH"
+eval "$(exenv init -)"
