@@ -1,10 +1,12 @@
 chromedriver
 direnv
 git
-heroku-toolbelt
+gnu-sed
+heroku
 libyaml
+phantomjs
 postgresql
-qt
+rabbitmq
 thoughtbot/formulae/rcm
 redis
 the_silver_searcher
