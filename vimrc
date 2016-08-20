@@ -16,6 +16,7 @@ Plug 'powerman/vim-plugin-AnsiEsc'
 
 Plug 'sheerun/vim-polyglot'
 Plug 'scrooloose/syntastic'
+Plug 'janko-m/vim-test'
 
 " Dash
 Plug 'rizzatti/dash.vim'
@@ -123,13 +124,16 @@ set iskeyword+=-
 " Better gf for rails
 set path+=app/**/,lib/**/,spec/**/
 
-" Better vroom
-let g:vroom_use_dispatch = 1
+" Better vim-test
+let test#strategy = "dispatch"
+let g:test#preserve_screen = 1
+nmap <silent> <leader>s :TestNearest<CR>
+nmap <silent> <leader>t :TestFile<CR>
+nmap <silent> <leader>a :TestSuite<CR>
+nmap <silent> <leader>l :TestLast<CR>
+nmap <silent> <leader>j :TestVisit<CR>
 
-nnoremap <Leader>t :VroomRunTestFile<CR>
-nnoremap <Leader>s :VroomRunNearestTest<CR>
-nnoremap <Leader>l :VroomRunLastTest<CR>
-nnoremap <Leader>r :Start rubocop<CR>
+nmap <silent> <leader>r :Start rubocop<CR>
 
 " Convert hash rockets syntax
 nnoremap <Leader>cc :%s/:\([^=,'"]*\) =>/\1:/gc<CR>
