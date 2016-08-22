@@ -1,11 +1,11 @@
-Documentation:
+Style/Documentation:
   Enabled: false
-
-LineLength:
-  Max: 120
 
 Style/DotPosition:
   EnforcedStyle: trailing
 
 Style/SpaceInsideHashLiteralBraces:
   Enabled: false
+
+Metrics/LineLength:
+  Max: 120
