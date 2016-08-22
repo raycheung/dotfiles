@@ -70,21 +70,21 @@ nmap Q <Nop>
 nnoremap // y/<C-r><C-w><CR>
 vnoremap // y/<C-r>"<CR>
 nnoremap /ag :Ag! '<C-r>/'<CR>
-nnoremap <silent> <Leader>/ :nohl<CR>
+nnoremap <silent> <leader>/ :nohl<CR>
 
 " and 100 times better for copying
-vnoremap <silent> <Leader><Leader>y "+y
-nnoremap <silent> <Leader><Leader>p "+p
+vnoremap <silent> <leader><leader>y "+y
+nnoremap <silent> <leader><leader>p "+p
 
 " I need to toggle these too often
-set pastetoggle=<Leader>p
-nnoremap <silent> <Leader>n :set invnumber<CR>
-nnoremap <silent> <Leader>w :set wrap!<CR>
+set pastetoggle=<leader>p
+nnoremap <silent> <leader>n :set invnumber<CR>
+nnoremap <silent> <leader>w :set wrap!<CR>
 
 " My gits
-nnoremap <silent> <Leader>g :Gstatus<CR>
+nnoremap <silent> <leader>g :Gstatus<CR>
 nnoremap <silent> <S-t> :Start tig --all<CR>
-nnoremap <silent> <Leader>b :Gbrowse<CR>
+nnoremap <silent> <leader>b :Gbrowse<CR>
 nnoremap <silent> <S-f> :Gfetch --all -p<CR>
 
 " Dashing
@@ -136,7 +136,7 @@ nmap <silent> <leader>j :TestVisit<CR>
 nmap <silent> <leader>r :Start rubocop<CR>
 
 " Convert hash rockets syntax
-nnoremap <Leader>cc :%s/:\([^=,'"]*\) =>/\1:/gc<CR>
+nnoremap <leader>cc :%s/:\([^=,'"]*\) =>/\1:/gc<CR>
 
 " Formatting cucumber table
 inoremap <silent> <Bar>   <Bar><Esc>:call <SID>align()<CR>a
