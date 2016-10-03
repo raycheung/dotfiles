@@ -20,6 +20,7 @@ Check out good vim color schemes: http://cocopon.me/app/vim-color-gallery/
     git clone https://github.com/riywo/node-build.git ~/.ndenv/plugins/node-build
     git clone https://github.com/talentdeficit/erlenv.git ~/.erlenv
     git clone https://github.com/mururu/exenv.git ~/.exenv
+    git clone https://github.com/mururu/elixir-build.git ~/.exenv/plugins/elixir-build
 
 ------
 
@@ -29,4 +30,4 @@ Check out good vim color schemes: http://cocopon.me/app/vim-color-gallery/
     35 9-17/2 * * 1-5 (git -C ~/.rbenv pull; git -C ~/.rbenv/plugins/ruby-build pull) &> /dev/null
     35 9-17/2 * * 1-5 (git -C ~/.ndenv pull; git -C ~/.ndenv/plugins/node-build pull) &> /dev/null
     35 9-17/2 * * 1-5 (git -C ~/.erlenv pull) &> /dev/null
-    35 9-17/2 * * 1-5 (git -C ~/.exenv pull) &> /dev/null
+    35 9-17/2 * * 1-5 (git -C ~/.exenv pull; git -C ~/.exenv/plugins/elixir-build pull) &> /dev/null
