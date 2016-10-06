@@ -8,6 +8,7 @@ phantomjs
 postgresql
 rabbitmq
 thoughtbot/formulae/rcm
+reattach-to-user-namespace
 redis
 the_silver_searcher
 tig
