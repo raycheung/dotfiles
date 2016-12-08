@@ -12,7 +12,7 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 Plug 'godlygeek/tabular'
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'powerman/vim-plugin-AnsiEsc'
+Plug 'vim-scripts/AnsiEsc.vim'
 
 Plug 'sheerun/vim-polyglot'
 Plug 'scrooloose/syntastic'
@@ -150,5 +150,3 @@ endfunction
 " We have custom extension
 autocmd BufNewFile,BufRead *.opal set syntax=ruby
 autocmd BufNewFile,BufRead *.opal let b:commentary_format='# %s'
-
-autocmd BufReadPost quickfix AnsiEsc
