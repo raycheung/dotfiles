@@ -132,8 +132,6 @@ nmap <silent> <leader>a :TestSuite<CR>
 nmap <silent> <leader>l :TestLast<CR>
 nmap <silent> <leader>j :TestVisit<CR>
 
-nmap <silent> <leader>r :Start rubocop<CR>
-
 " Convert hash rockets syntax
 nnoremap <leader>cc :%s/:\([^=,'"]*\) =>/\1:/gc<CR>
 
