@@ -29,7 +29,6 @@ Plug 'tpope/vim-bundler'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-rake'
 Plug 'tpope/vim-cucumber'
-Plug 'skalnik/vim-vroom'
 
 call plug#end()
 
