@@ -112,7 +112,7 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_cucumber_cucumber_args='--profile syntastic'
-let g:syntastic_javascript_checkers=['jscs']
+let g:syntastic_javascript_checkers=['jscs', 'flow']
 let g:syntastic_haml_checkers = ['haml_lint']
 let g:syntastic_sass_checkers = []
 
