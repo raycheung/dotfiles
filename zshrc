@@ -40,3 +40,7 @@ eval "$(exenv init -)"
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
+
+# for jenv
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
