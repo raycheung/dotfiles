@@ -6,3 +6,6 @@
 	path = tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm.git
 	branch = master
+[submodule "vim-plug"]
+	path = vim-plug
+	url = https://github.com/junegunn/vim-plug.git
