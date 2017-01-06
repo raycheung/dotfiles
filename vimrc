@@ -13,6 +13,7 @@ Plug 'tpope/vim-surround'
 Plug 'godlygeek/tabular'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'vim-scripts/AnsiEsc.vim'
+Plug 'luochen1990/rainbow'
 
 Plug 'sheerun/vim-polyglot'
 Plug 'scrooloose/syntastic'
@@ -56,6 +57,9 @@ set backupskip=/tmp/*,/private/tmp/*
 " Mouse mode
 set mouse=a
 set ttymouse=xterm2
+
+" Rainbow parens
+let g:rainbow_active=1
 
 " Auto remove trailing whitespace
 autocmd BufWritePre * :%s/\s\+$//e
