@@ -11,8 +11,6 @@ Plug 'ervandew/supertab'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 Plug 'godlygeek/tabular'
-Plug 'christoomey/vim-tmux-navigator'
-Plug 'vim-scripts/AnsiEsc.vim'
 Plug 'luochen1990/rainbow'
 
 Plug 'sheerun/vim-polyglot'
