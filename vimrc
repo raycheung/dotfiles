@@ -149,6 +149,9 @@ function! s:align()
   endif
 endfunction
 
+" Better indentation in Clojure
+let g:clojure_fuzzy_indent_patterns = ['^with', '^def', '^let', '^go', '^on']
+
 " We have custom extension
 autocmd BufNewFile,BufRead *.opal set syntax=ruby
 autocmd BufNewFile,BufRead *.opal let b:commentary_format='# %s'
