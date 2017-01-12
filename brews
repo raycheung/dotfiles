@@ -3,14 +3,15 @@ direnv
 git
 gnu-sed
 heroku
+leiningen
 libyaml
 phantomjs
 postgresql
 rabbitmq
-thoughtbot/formulae/rcm
 reattach-to-user-namespace
 redis
 the_silver_searcher
+thoughtbot/formulae/rcm
 tig
 tmux
 v8
