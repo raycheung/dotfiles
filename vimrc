@@ -12,6 +12,7 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 Plug 'godlygeek/tabular'
 Plug 'luochen1990/rainbow'
+Plug 'vim-airline/vim-airline'
 
 Plug 'sheerun/vim-polyglot'
 Plug 'scrooloose/syntastic'
@@ -22,6 +23,13 @@ Plug 'rizzatti/dash.vim'
 
 " Color schemes
 Plug 'marcopaganini/termschool-vim-theme'
+
+Plug 'tpope/vim-fireplace'
+Plug 'tpope/vim-classpath'
+Plug 'tpope/vim-salve'
+Plug 'guns/vim-clojure-highlight'
+Plug 'venantius/vim-eastwood'
+Plug 'venantius/vim-cljfmt'
 
 Plug 'tpope/vim-rbenv'
 Plug 'tpope/vim-bundler'
@@ -152,9 +160,6 @@ function! s:align()
     call search(repeat('[^|]*|',column).'\s\{-\}'.repeat('.',position),'ce',line('.'))
   endif
 endfunction
-
-" Better indentation in Clojure
-let g:clojure_fuzzy_indent_patterns = ['^with', '^def', '^let', '^assoc', '^update', '^map', '^reduce', '^send', '^go', '^on']
 
 " We have custom extension
 autocmd BufNewFile,BufRead *.opal set syntax=ruby
