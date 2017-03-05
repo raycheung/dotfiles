@@ -5,4 +5,11 @@
                   [lein-ancient "0.6.10"]
                   [lein-vanity "0.2.0"]]
         :dependencies [[io.aviso/pretty "0.1.33"]
-                       [cljfmt "0.5.6"]]}}
+                       [cljfmt "0.5.6"]]
+        :repl-options {:init (require 'cljfmt.core)}
+        :cljfmt {:indents {assoc         [[:block 1]]
+                           update        [[:block 2]]
+                           send          [[:block 1]]
+                           go-try        [[:block 1]]
+                           go-super      [[:block 1]]
+                           go-loop-super [[:block 2]]}}}}
