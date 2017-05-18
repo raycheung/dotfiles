@@ -5,3 +5,7 @@
 .DS_Store
 .envrc
 Session.vim
+.gemnasium.yml
+playground.config
+uat.config
+production.config
