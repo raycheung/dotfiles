@@ -9,3 +9,4 @@ Session.vim
 playground.config
 uat.config
 production.config
+*.jks
