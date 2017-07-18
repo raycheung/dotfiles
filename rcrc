@@ -1,1 +1,2 @@
 EXCLUDES="README.md brews"
+SYMLINK_DIRS="zprezto vim-plug"
