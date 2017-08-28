@@ -12,6 +12,7 @@
         :cljfmt {:indents {assoc         [[:block 1]]
                            update        [[:block 2]]
                            send          [[:block 1]]
+                           go-loop       [[:block 1]]
                            go-try        [[:block 1]]
                            go-super      [[:block 1]]
                            go-loop-try   [[:block 2]]
