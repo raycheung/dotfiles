@@ -70,8 +70,8 @@ set ttymouse=xterm2
 let g:rainbow_active=1
 
 " Highlight long lines
-highlight OverLength ctermbg=red ctermfg=white guibg=#592929
-match OverLength /\%121v.\+/
+set colorcolumn=120
+highlight ColorColumn ctermbg=yellow ctermfg=black
 
 " Auto remove trailing whitespace
 autocmd BufWritePre * :%s/\s\+$//e
