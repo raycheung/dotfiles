@@ -18,6 +18,7 @@
                            go-loop-try       [[:block 2]]
                            go-loop-super     [[:block 2]]
                            on-abort          [[:block 1]]
+                           thread-try        [[:block 1]]
                            execute           [[:block 1]]
                            execute-async     [[:block 1]]
                            pipeline          [[:block 2]]
