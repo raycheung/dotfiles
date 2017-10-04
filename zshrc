@@ -40,11 +40,3 @@ eval "$(exenv init -)"
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
-
-# for scalaenv
-export PATH="${HOME}/.scalaenv/bin:${PATH}"
-eval "$(scalaenv init -)"
-
-# for sbtenv
-export PATH="${HOME}/.sbtenv/bin:${PATH}"
-eval "$(sbtenv init -)"
