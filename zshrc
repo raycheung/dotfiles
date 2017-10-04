@@ -35,8 +35,3 @@ eval "$(erlenv init -)"
 # for exenv
 export PATH="$HOME/.exenv/bin:$PATH"
 eval "$(exenv init -)"
-
-# for pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
