@@ -6,8 +6,7 @@
                   [lein-vanity "0.2.0"]
                   [lein-cljfmt-editor "0.1.0"]]
         :dependencies [[io.aviso/pretty "0.1.33"]
-                       [cljfmt "0.5.6"]
-                       [debugger "0.2.0"]]
+                       [cljfmt "0.5.6"]]
         :repl-options {:init (require 'cljfmt.core)}
         :cljfmt {:indents {assoc             [[:block 1]]
                            update            [[:block 2]]
