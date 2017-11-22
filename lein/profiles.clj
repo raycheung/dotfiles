@@ -13,6 +13,7 @@
                            assoc!            [[:inner 0]]
                            update            [[:inner 0]]
                            send              [[:block 1]]
+                           send-off          [[:block 1]]
                            go-loop           [[:block 1]]
                            go-try            [[:block 1]]
                            go-super          [[:block 1]]
