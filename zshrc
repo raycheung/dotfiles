@@ -16,13 +16,7 @@ fi
 export PATH="./bin:$PATH"
 
 # for direnv
-_direnv_hook() {
-  eval "$(direnv export zsh)";
-}
-typeset -ag precmd_functions
-if [[ -z $precmd_functions[(r)_direnv_hook] ]]; then
-  precmd_functions+=_direnv_hook;
-fi
+eval "$(direnv hook zsh)"
 
 # for ndenv
 export PATH="$HOME/.ndenv/bin:$PATH"
