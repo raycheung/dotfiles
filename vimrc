@@ -120,7 +120,7 @@ nnoremap <C-n> :NERDTreeToggle<CR>
 nnoremap <silent> ,n :NERDTreeFind<CR>
 
 " Auto maximizing selected window
-let &winheight = &lines * 7 / 10
+let &winheight = &lines * 6 / 10
 
 " Enable syntastic
 let g:syntastic_always_populate_loc_list = 1
@@ -132,8 +132,8 @@ let g:syntastic_javascript_checkers=['jscs', 'flow']
 let g:syntastic_haml_checkers = ['haml_lint']
 let g:syntastic_sass_checkers = []
 
-" '-' (dash) is not a word separator for me
-set iskeyword+=-
+" For Clojure, '.' (dot) is a word separator for me
+autocmd BufNewFile,BufRead *.clj set iskeyword-=.
 
 " Better gf for rails
 set path+=app/**/,lib/**/,spec/**/
