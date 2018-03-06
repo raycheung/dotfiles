@@ -8,7 +8,11 @@
         :dependencies [[io.aviso/pretty "0.1.33"]
                        [cljfmt "0.5.7"]]
         :repl-options {:init (require 'cljfmt.core)}
-        :cljfmt {:indents {into              [[:inner 0]]
+        :cljfmt {:indents {map               [[:inner 0]]
+                           mapv              [[:inner 0]]
+                           into              [[:inner 0]]
+                           group-by          [[:inner 0]]
+                           sort-by           [[:inner 0]]
                            assoc             [[:inner 0]]
                            assoc!            [[:inner 0]]
                            update            [[:inner 0]]
