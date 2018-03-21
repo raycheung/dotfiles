@@ -29,3 +29,7 @@ eval "$(erlenv init -)"
 # for exenv
 export PATH="$HOME/.exenv/bin:$PATH"
 eval "$(exenv init -)"
+
+# for pyenv
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"

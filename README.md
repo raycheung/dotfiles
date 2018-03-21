@@ -22,6 +22,7 @@ Check out good vim color schemes: http://cocopon.me/app/vim-color-gallery/
     git clone https://github.com/talentdeficit/erlenv.git ~/.erlenv
     git clone https://github.com/mururu/exenv.git ~/.exenv
     git clone https://github.com/mururu/elixir-build.git ~/.exenv/plugins/elixir-build
+    git clone https://github.com/pyenv/pyenv.git ~/.pyenv
 
 ------
 
