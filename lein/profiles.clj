@@ -3,7 +3,7 @@
                   [lein-kibit "0.1.5"]
                   [lein-cljfmt "0.5.7"]
                   [lein-cljfmt-editor "0.1.0"]
-                  [lein-ancient "0.6.10"]
+                  [lein-ancient "0.6.15"]
                   [lein-vanity "0.2.0"]]
         :dependencies [[io.aviso/pretty "0.1.33"]
                        [cljfmt "0.5.7"]
