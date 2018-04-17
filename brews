@@ -10,8 +10,10 @@ kafka
 kafkacat
 leiningen
 nmap
+opam
 phantomjs
 postgresql@9.6
+python@2
 rabbitmq
 thoughtbot/formulae/rcm
 reattach-to-user-namespace

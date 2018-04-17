@@ -33,3 +33,9 @@ eval "$(exenv init -)"
 # for pyenv
 export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
+
+# for OCaml
+if [ -x `which opam` ]; then
+  eval `opam config env`
+  . $HOME/.opam/opam-init/init.zsh &> /dev/null || true
+fi
