@@ -3,12 +3,12 @@ chromedriver
 direnv
 docker
 docker-machine-driver-xhyve
-erlang@19
 git
 gnu-sed
 heroku/brew/heroku
+kafka
+kafkacat
 leiningen
-libyaml
 nmap
 phantomjs
 postgresql@9.6
