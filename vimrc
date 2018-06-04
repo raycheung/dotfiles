@@ -23,7 +23,7 @@ Plug 'janko-m/vim-test'
 Plug 'rizzatti/dash.vim'
 
 " Color schemes
-Plug 'morhetz/gruvbox'
+Plug 'crusoexia/vim-monokai'
 
 Plug 'tpope/vim-fireplace'
 Plug 'tpope/vim-classpath'
@@ -56,8 +56,7 @@ set shiftwidth=2
 set expandtab
 set smarttab
 
-set background=dark
-colorscheme gruvbox
+colorscheme monokai
 
 " Fix crontab -e
 set backupskip=/tmp/*,/private/tmp/*
