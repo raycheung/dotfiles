@@ -13,4 +13,6 @@
                            update      [[:inner 0]]
                            into        [[:inner 0]]
                            go-loop     [[:block 1]]
+                           <!          [[:block 0]]
+                           >!          [[:block 1]]
                            fdef        [[:block 1]]}}}}
