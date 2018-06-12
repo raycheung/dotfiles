@@ -56,6 +56,7 @@ set shiftwidth=2
 set expandtab
 set smarttab
 
+set termguicolors
 colorscheme monokai
 
 " Fix crontab -e
