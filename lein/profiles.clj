@@ -1,6 +1,6 @@
 {:user {:plugins [[io.aviso/pretty "0.1.34"]
                   [mvxcvi/whidbey "1.3.2"]
-                  [jonase/eastwood "0.2.4"]
+                  [jonase/eastwood "0.2.6" :exclusions [org.clojure/clojure]]
                   [lein-kibit "0.1.5"]
                   [lein-cljfmt "0.5.7"]
                   [lein-cljfmt-editor "0.1.0"]
