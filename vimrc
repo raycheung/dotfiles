@@ -4,6 +4,7 @@ Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-obsession'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
+Plug 'mhinz/vim-startify'
 Plug 'scrooloose/nerdtree'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'rking/ag.vim'
@@ -114,6 +115,12 @@ let g:ctrlp_prompt_mappings = {
 
 " Use ag for ctrlp
 let g:ctrlp_user_command = 'ag %s -l -g ""'
+
+" Quicker start with ctrlp
+let g:ctrlp_reuse_window = 'startify'
+
+" Stop ctrlp messing up with NERDTree
+let g:ctrlp_cmd = ':NERDTreeClose\|CtrlP'
 
 " Better NERDTree experience
 nnoremap <C-n> :NERDTreeToggle<CR>
