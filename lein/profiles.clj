@@ -9,10 +9,14 @@
         :dependencies [[io.aviso/pretty "0.1.34"]
                        [cljfmt "0.5.7"]]
         :cljfmt {:indents {map         [[:inner 0]]
+                           reduce      [[:inner 0]]
                            assoc       [[:inner 0]]
+                           assoc-in    [[:inner 0]]
                            update      [[:inner 0]]
+                           update-in   [[:inner 0]]
                            into        [[:inner 0]]
                            go-loop     [[:block 1]]
                            <!          [[:block 0]]
                            >!          [[:block 1]]
-                           fdef        [[:block 1]]}}}}
+                           fdef        [[:block 1]]
+                           wcar        [[:inner 0]]}}}}
