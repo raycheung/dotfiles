@@ -121,6 +121,9 @@ let g:ctrlp_user_command = 'ag %s -l -g ""'
 " Quicker start with ctrlp
 let g:ctrlp_reuse_window = 'startify'
 
+" Stay in git root folder
+let g:startify_change_to_vcs_root = 1
+
 " Stop ctrlp messing up with NERDTree
 let g:ctrlp_cmd = ':NERDTreeClose\|CtrlP'
 
