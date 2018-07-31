@@ -124,6 +124,15 @@ let g:ctrlp_reuse_window = 'startify'
 " Stay in git root folder
 let g:startify_change_to_vcs_root = 1
 
+" Reorder the starting lists
+let g:startify_lists = [
+      \ { 'type': 'dir',       'header': ['   MRU '. getcwd()] },
+      \ { 'type': 'files',     'header': ['   MRU ']           },
+      \ { 'type': 'sessions',  'header': ['   Sessions']       },
+      \ { 'type': 'bookmarks', 'header': ['   Bookmarks']      },
+      \ { 'type': 'commands',  'header': ['   Commands']       },
+      \ ]
+
 " Stop ctrlp messing up with NERDTree
 let g:ctrlp_cmd = ':NERDTreeClose\|CtrlP'
 
