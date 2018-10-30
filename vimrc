@@ -33,7 +33,7 @@ Plug 'tpope/vim-salve'
 Plug 'guns/vim-clojure-highlight'
 Plug 'venantius/vim-eastwood'
 "Plug 'venantius/vim-cljfmt'
-Plug 'MichaelBlume/vim-cljfmt'
+Plug 'raycheung/vim-cljfmt'
 
 Plug 'tpope/vim-rbenv'
 Plug 'tpope/vim-bundler'
