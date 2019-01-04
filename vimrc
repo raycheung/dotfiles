@@ -24,8 +24,7 @@ Plug 'janko-m/vim-test'
 Plug 'rizzatti/dash.vim'
 
 " Color schemes
-Plug 'crusoexia/vim-monokai'
-Plug 'mhinz/vim-janah'
+Plug 'chriskempson/base16-vim'
 
 Plug 'tpope/vim-fireplace'
 Plug 'tpope/vim-classpath'
@@ -58,9 +57,8 @@ set shiftwidth=2
 set expandtab
 set smarttab
 
-set termguicolors
-"colorscheme monokai
-colorscheme janah
+let base16colorspace=256
+colorscheme base16-default-dark
 
 " Fix crontab -e
 set backupskip=/tmp/*,/private/tmp/*
