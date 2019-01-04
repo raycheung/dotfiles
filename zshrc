@@ -14,6 +14,9 @@ fi
 export EDITOR='vim'
 export VISUAL='vim'
 
+# add sbin
+export PATH="/usr/sbin:/sbin:$PATH"
+
 # set color with Base16 Shell
 BASE16_SHELL="$HOME/.config/base16-shell/"
 [ -n "$PS1" ] && \
