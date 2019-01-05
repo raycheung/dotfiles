@@ -57,8 +57,10 @@ set shiftwidth=2
 set expandtab
 set smarttab
 
-let base16colorspace=256
-colorscheme base16-default-dark
+if filereadable(expand("~/.vimrc_background"))
+  let base16colorspace=256
+  source ~/.vimrc_background
+endif
 
 " Fix crontab -e
 set backupskip=/tmp/*,/private/tmp/*
