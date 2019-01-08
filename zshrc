@@ -11,6 +11,8 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+export EDITOR='vim'
+export VISUAL='vim'
 
 # set color with Base16 Shell
 BASE16_SHELL="$HOME/.config/base16-shell/"
