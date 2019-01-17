@@ -27,18 +27,14 @@ export PATH="./bin:$PATH"
 # for direnv
 eval "$(direnv hook zsh)"
 
-# for ndenv
-export PATH="$HOME/.ndenv/bin:$PATH"
-eval "$(ndenv init -)"
-
-# for erlenv
-export PATH="$HOME/.erlenv/bin:$PATH"
-eval "$(erlenv init -)"
-
-# for exenv
-export PATH="$HOME/.exenv/bin:$PATH"
-eval "$(exenv init -)"
-
 # for pyenv
 export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
+
+# for rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
+# for ndenv
+export PATH="$HOME/.ndenv/bin:$PATH"
+eval "$(ndenv init -)"
