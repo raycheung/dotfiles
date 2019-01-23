@@ -74,7 +74,7 @@ let g:rainbow_active=1
 
 " Highlight long lines
 set colorcolumn=120
-highlight ColorColumn ctermbg=yellow ctermfg=black
+highlight ColorColumn ctermbg=darkgrey
 
 " Auto remove trailing whitespace
 autocmd BufWritePre * :%s/\s\+$//e
