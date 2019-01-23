@@ -153,9 +153,6 @@ let g:syntastic_javascript_checkers=['jscs', 'flow']
 let g:syntastic_haml_checkers = ['haml_lint']
 let g:syntastic_sass_checkers = []
 
-" For Clojure, '.' (dot) is a word separator for me
-autocmd BufNewFile,BufRead *.clj set iskeyword-=.
-
 " Better gf for rails
 set path+=app/**/,lib/**/,spec/**/
 
