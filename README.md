@@ -3,10 +3,6 @@ Moving development environment around.
 
 Base16 themes: http://chriskempson.com/projects/base16/
 
-Mac Terminal theme: https://github.com/flipxfx/gruvbox-terminal
-
-Check out good vim color schemes: http://cocopon.me/app/vim-color-gallery/
-
 ------
 
 ## Quickstart
