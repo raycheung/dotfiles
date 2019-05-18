@@ -143,6 +143,10 @@ nnoremap <silent> ,n :NERDTreeFind<CR>
 " Auto maximizing selected window
 let &winheight = &lines * 6 / 10
 
+" Specific for Clojure
+autocmd BufNewFile,BufRead *.clj set iskeyword-=.
+autocmd BufNewFile,BufRead *.clj set iskeyword-=/
+
 " Enable syntastic
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
