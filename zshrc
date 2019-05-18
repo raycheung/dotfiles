@@ -14,9 +14,6 @@ fi
 export EDITOR='vim'
 export VISUAL='vim'
 
-# init nix
-. $HOME/.nix-profile/etc/profile.d/nix.sh
-
 # set color with Base16 Shell
 BASE16_SHELL="$HOME/.config/base16-shell/"
 [ -n "$PS1" ] && \
