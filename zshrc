@@ -10,6 +10,11 @@ export POWERLEVEL9K_MODE='nerdfont-complete'
 export POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
 export POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status time)
 
+# fix https://gnunn1.github.io/tilix-web/manual/vteconfig/
+if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
+  source /etc/profile.d/vte-2.91.sh
+fi
+
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
