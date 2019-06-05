@@ -101,6 +101,9 @@ nnoremap <silent> <S-t> :Start tig --all<CR>
 nnoremap <silent> <leader>b :Gbrowse<CR>
 nnoremap <silent> <S-f> :Gfetch --all -p<CR>
 
+" Configure airline
+let g:airline_powerline_fonts = 1
+
 " Better ag
 let g:ag_highlight=1
 
