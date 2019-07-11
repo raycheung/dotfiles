@@ -18,7 +18,6 @@ Plug 'vim-airline/vim-airline'
 
 Plug 'sheerun/vim-polyglot'
 Plug 'scrooloose/syntastic'
-Plug 'janko-m/vim-test'
 
 " Color schemes
 Plug 'chriskempson/base16-vim'
@@ -35,6 +34,7 @@ Plug 'tpope/vim-rbenv'
 Plug 'tpope/vim-bundler'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-rake'
+Plug 'janko/vim-test'
 
 call plug#end()
 
