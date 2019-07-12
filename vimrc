@@ -23,8 +23,6 @@ Plug 'scrooloose/syntastic'
 Plug 'chriskempson/base16-vim'
 
 Plug 'tpope/vim-fireplace'
-Plug 'tpope/vim-classpath'
-Plug 'tpope/vim-salve'
 Plug 'guns/vim-clojure-highlight'
 Plug 'venantius/vim-eastwood'
 "Plug 'venantius/vim-cljfmt'
