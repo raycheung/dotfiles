@@ -1,9 +1,7 @@
 call plug#begin('~/.vim/plugged')
 
 Plug 'tpope/vim-dispatch'
-Plug 'tpope/vim-obsession'
 Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-rhubarb'
 Plug 'mhinz/vim-startify'
 Plug 'scrooloose/nerdtree'
 Plug 'ctrlpvim/ctrlp.vim'
@@ -26,12 +24,6 @@ Plug 'tpope/vim-fireplace'
 Plug 'guns/vim-clojure-highlight'
 Plug 'venantius/vim-eastwood'
 Plug 'venantius/vim-cljfmt'
-
-Plug 'tpope/vim-rbenv'
-Plug 'tpope/vim-bundler'
-Plug 'tpope/vim-rails'
-Plug 'tpope/vim-rake'
-Plug 'janko/vim-test'
 
 call plug#end()
 
@@ -95,7 +87,6 @@ nnoremap <silent> <leader>w :set wrap!<CR>
 " My gits
 nnoremap <silent> <leader>g :Gstatus<CR>
 nnoremap <silent> <S-t> :Start tig --all<CR>
-nnoremap <silent> <leader>b :Gbrowse<CR>
 nnoremap <silent> <S-f> :Gfetch --all -p<CR>
 
 " Configure airline
@@ -151,24 +142,6 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_cucumber_cucumber_args='--profile syntastic'
-let g:syntastic_javascript_checkers=['jscs', 'flow']
-let g:syntastic_haml_checkers = ['haml_lint']
-let g:syntastic_sass_checkers = []
-
-" Better gf for rails
-set path+=app/**/,lib/**/,spec/**/
-
-" Better vim-test
-let test#strategy = 'dispatch'
-let g:test#preserve_screen = 1
-nmap <silent> <leader>s :TestNearest<CR>
-nmap <silent> <leader>t :TestFile<CR>
-nmap <silent> <leader>a :TestSuite<CR>
-nmap <silent> <leader>l :TestLast<CR>
-nmap <silent> <leader>j :TestVisit<CR>
-
-" Convert hash rockets syntax
-nnoremap <leader>cc :%s/:\([^=,'"]*\) =>/\1:/gc<CR>
 
 " Formatting cucumber table
 inoremap <silent> <Bar>   <Bar><Esc>:call <SID>align()<CR>a
@@ -182,7 +155,3 @@ function! s:align()
     call search(repeat('[^|]*|',column).'\s\{-\}'.repeat('.',position),'ce',line('.'))
   endif
 endfunction
-
-" We have custom extension
-autocmd BufNewFile,BufRead *.opal set syntax=ruby
-autocmd BufNewFile,BufRead *.opal let b:commentary_format='# %s'
