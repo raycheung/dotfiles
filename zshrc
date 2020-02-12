@@ -20,7 +20,9 @@ export EDITOR='vim'
 export VISUAL='vim'
 
 # init nix
-. $HOME/.nix-profile/etc/profile.d/nix.sh
+if [ -d $HOME/.nix-profile ]; then
+  . $HOME/.nix-profile/etc/profile.d/nix.sh
+fi
 
 # set color with Base16 Shell
 BASE16_SHELL="$HOME/.config/base16-shell/"
@@ -36,16 +38,24 @@ export PATH="./bin:$PATH"
 eval "$(direnv hook zsh)"
 
 # for pyenv
-export PATH="$HOME/.pyenv/bin:$PATH"
-eval "$(pyenv init -)"
+if [ -d $HOME/.pyenv ]; then
+  export PATH="$HOME/.pyenv/bin:$PATH"
+  eval "$(pyenv init -)"
+fi
 
 # for rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+if [ -d $HOME/.rbenv ]; then
+  export PATH="$HOME/.rbenv/bin:$PATH"
+  eval "$(rbenv init -)"
+fi
 
 # for nodenv
-export PATH="$HOME/.nodenv/bin:$PATH"
-eval "$(nodenv init -)"
+if [ -d $HOME/.nodenv ]; then
+  export PATH="$HOME/.nodenv/bin:$PATH"
+  eval "$(nodenv init -)"
+fi
 
 ## for yarn
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+if [ -d $HOME/.yarn ]; then
+  export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+fi
