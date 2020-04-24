@@ -1,6 +1,6 @@
 [user]
 	name = Ray Cheung
-	email = ray.cheung@segantii.com
+	email = github@pragmatic.hk
 [core]
 	excludesfile = /home/ray/.gitignore
 	editor = /usr/bin/vim
