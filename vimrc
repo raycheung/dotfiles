@@ -1,5 +1,8 @@
 call plug#begin('~/.vim/plugged')
 
+" Configure polyglot
+let g:polyglot_disabled = ['csv']
+
 Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-fugitive'
 Plug 'mhinz/vim-startify'
