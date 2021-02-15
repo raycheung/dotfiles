@@ -1,10 +1,12 @@
 [user]
 	name = Ray Cheung
-	email = ray.swc@gmail.com
+	email = github@pragmatic.hk
 [core]
 	excludesfile = /Users/ray/.gitignore_global
-	editor = /usr/bin/vim
+	editor = \"C:/Program Files (x86)/GitExtensions/GitExtensions.exe\" fileeditor
 [push]
 	default = simple
 [gui]
 	pruneduringfetch = true
+[credential]
+	helper = manager-core

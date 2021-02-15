@@ -132,6 +132,9 @@ nnoremap <silent> ,n :NERDTreeFind<CR>
 " Auto maximizing selected window
 let &winheight = &lines * 6 / 10
 
+" Fireplace
+let g:fireplace_python_executable = 'python'
+
 " Specific for Clojure
 autocmd BufNewFile,BufRead *.clj set iskeyword-=.
 autocmd BufNewFile,BufRead *.clj set iskeyword-=/
@@ -155,3 +158,6 @@ function! s:align()
     call search(repeat('[^|]*|',column).'\s\{-\}'.repeat('.',position),'ce',line('.'))
   endif
 endfunction
+
+" Windows HiDPI
+set guifont=MesloLGM_NF:h10:cANSI:qDRAFT
