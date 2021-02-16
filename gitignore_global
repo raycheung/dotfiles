@@ -13,3 +13,6 @@ Session.vim
 
 /assets/
 /locales/
+
+/.ipynb_checkpoints
+/.develop

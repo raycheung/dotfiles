@@ -2,11 +2,28 @@
 	name = Ray Cheung
 	email = github@pragmatic.hk
 [core]
-	excludesfile = /Users/ray/.gitignore_global
+	excludesFile = C:/Users/ray.cheung/.gitignore_global
 	editor = \"C:/Program Files (x86)/GitExtensions/GitExtensions.exe\" fileeditor
+	autocrlf = input
 [push]
 	default = simple
 [gui]
 	pruneduringfetch = true
 [credential]
 	helper = manager-core
+[pull]
+	rebase = false
+[fetch]
+	prune = false
+[rebase]
+	autoStash = false
+[i18n]
+	filesEncoding = utf-8
+[diff]
+	guitool = kdiff3
+[difftool "kdiff3"]
+	cmd = \"\" \"$LOCAL\" \"$REMOTE\"
+[merge]
+	guitool = kdiff3
+[mergetool "kdiff3"]
+	cmd = \"\" \"$BASE\" \"$LOCAL\" \"$REMOTE\" -o \"$MERGED\"
