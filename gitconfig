@@ -1,10 +1,11 @@
 [user]
 	name = Ray Cheung
-	email = github@pragmatic.hk
+	email = ray.cheung@welab.co
 [core]
 	excludesFile = C:/Users/ray.cheung/.gitignore_global
-	editor = \"C:/Program Files (x86)/GitExtensions/GitExtensions.exe\" fileeditor
-	autocrlf = input
+	editor = \"C:/Users/ray.cheung/scoop/apps/gitextensions/current/GitExtensions.exe\" fileeditor
+	autocrlf = true
+	safecrlf = false
 [push]
 	default = simple
 [gui]
@@ -22,8 +23,10 @@
 [diff]
 	guitool = kdiff3
 [difftool "kdiff3"]
-	cmd = \"\" \"$LOCAL\" \"$REMOTE\"
+	cmd = \"C:/Users/ray.cheung/scoop/apps/kdiff3/current/kdiff3.exe\" \"$LOCAL\" \"$REMOTE\"
+	path = C:/Users/ray.cheung/scoop/apps/kdiff3/current/kdiff3.exe
 [merge]
 	guitool = kdiff3
 [mergetool "kdiff3"]
-	cmd = \"\" \"$BASE\" \"$LOCAL\" \"$REMOTE\" -o \"$MERGED\"
+	cmd = \"C:/Users/ray.cheung/scoop/apps/kdiff3/current/kdiff3.exe\" \"$BASE\" \"$LOCAL\" \"$REMOTE\" -o \"$MERGED\"
+	path = C:/Users/ray.cheung/scoop/apps/kdiff3/current/kdiff3.exe
