@@ -42,6 +42,7 @@ export PATH="./bin:$PATH"
 # for pyenv
 if [ -d $HOME/.pyenv ]; then
   export PATH="$HOME/.pyenv/bin:$PATH"
+  eval "$(pyenv init --path)"
   eval "$(pyenv init -)"
 fi
 
