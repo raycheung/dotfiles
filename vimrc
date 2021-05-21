@@ -24,6 +24,7 @@ Plug 'scrooloose/syntastic'
 " Color schemes
 Plug 'chriskempson/base16-vim'
 
+" Clojurealm
 Plug 'tpope/vim-fireplace'
 Plug 'guns/vim-clojure-highlight'
 Plug 'venantius/vim-eastwood'
