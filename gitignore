@@ -6,7 +6,8 @@
 .envrc
 Session.vim
 *.jks
-.idea/
+/.idea
+/target
 *.iml
 *.class
 /ignite/
