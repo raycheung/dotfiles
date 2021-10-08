@@ -37,7 +37,7 @@ base16_material-darker
 export PATH="./bin:$PATH"
 
 # for direnv
-eval "$(direnv hook zsh)"
+[[ ! -x direnv ]] || eval "$(direnv hook zsh)"
 
 # for pyenv
 if [ -d $HOME/.pyenv ]; then
