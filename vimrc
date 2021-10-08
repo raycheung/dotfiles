@@ -90,9 +90,9 @@ nnoremap <silent> <leader>n :set invnumber<CR>
 nnoremap <silent> <leader>w :set wrap!<CR>
 
 " My gits
-nnoremap <silent> <leader>g :Gstatus<CR>
+nnoremap <silent> <leader>g :Git<CR>
 nnoremap <silent> <S-t> :Start tig --all<CR>
-nnoremap <silent> <S-f> :Gfetch --all -p<CR>
+nnoremap <silent> <S-f> :Git fetch --all -p<CR>
 
 " Configure airline
 let g:airline_powerline_fonts = 1
