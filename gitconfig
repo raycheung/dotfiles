@@ -2,30 +2,30 @@
 	name = Ray Cheung
 	email = github@pragmatic.hk
 [core]
-	excludesFile = C:/Users/huracan/.gitignore
-	editor = \"C:/Users/huracan/scoop/apps/gitextensions/current\" fileeditor
+	excludesFile = %USERPROFILE%/.gitignore
+	editor = \"$SCOOP/apps/gitextensions/current\" fileeditor
 	autocrlf = input
-[push]
-	default = simple
-[gui]
-	pruneduringfetch = true
-[credential "helperselector"]
-	selected = manager-core
-[pull]
-	rebase = false
 [fetch]
 	prune = false
+[push]
+	default = simple
+[pull]
+	rebase = false
 [rebase]
 	autoStash = false
+[credential "helperselector"]
+	selected = manager-core
 [i18n]
 	filesEncoding = utf-8
+[gui]
+	pruneduringfetch = true
 [diff]
 	guitool = kdiff3
 [difftool "kdiff3"]
-	cmd = \"\" \"$LOCAL\" \"$REMOTE\"
+	cmd = \"$SCOOP/apps/kdiff3/current/bin/kdiff3.exe\" \"$LOCAL\" \"$REMOTE\"
+	path = $SCOOP/apps/kdiff3/current/bin/kdiff3.exe
 [merge]
 	guitool = kdiff3
 [mergetool "kdiff3"]
-	cmd = \"\" \"$BASE\" \"$LOCAL\" \"$REMOTE\" -o \"$MERGED\"
-[http]
-	proxy = socks5://10.124.1.22:1080
+	cmd = \"$SCOOP/apps/kdiff3/current/bin/kdiff3.exe\" \"$BASE\" \"$LOCAL\" \"$REMOTE\" -o \"$MERGED\"
+	path = $SCOOP/apps/kdiff3/current/bin/kdiff3.exe
