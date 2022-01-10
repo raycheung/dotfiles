@@ -8,7 +8,6 @@ Base16 themes: http://chriskempson.com/projects/base16/
 ## Quickstart
 
     git clone --recursive http://github.com/raycheung/dotfiles ~/.dotfiles
-    git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
     RCRC=~/.dotfiles/rcrc rcup -f -v
     direnv allow .
     git clone https://github.com/pyenv/pyenv.git ~/.pyenv
