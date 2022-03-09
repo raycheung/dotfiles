@@ -66,8 +66,3 @@ fi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-# for docker in wsl
-if [ -d /mnt/wsl/docker-desktop ]; then
-  export PATH="/mnt/wsl/docker-desktop/cli-tools/usr/bin:$PATH"
-fi
