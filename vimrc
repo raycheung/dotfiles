@@ -58,7 +58,7 @@ set backupskip=/tmp/*,/private/tmp/*
 
 " Mouse mode
 set mouse=a
-set ttymouse=xterm2
+"set ttymouse=xterm2
 
 " Rainbow parens
 let g:rainbow_active=1
