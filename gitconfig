@@ -3,7 +3,7 @@
 	email = github@pragmatic.hk
 [core]
 	excludesFile = %USERPROFILE%/.gitignore
-	editor = \"$SCOOP/apps/gitextensions/current\" fileeditor
+	editor = \"C:/Users/huracan/scoop/apps/gitextensions/current/GitExtensions.exe\" fileeditor
 	autocrlf = input
 [fetch]
 	prune = false
@@ -22,10 +22,12 @@
 [diff]
 	guitool = kdiff3
 [difftool "kdiff3"]
-	cmd = \"$SCOOP/apps/kdiff3/current/bin/kdiff3.exe\" \"$LOCAL\" \"$REMOTE\"
-	path = $SCOOP/apps/kdiff3/current/bin/kdiff3.exe
+	cmd = \"C:/Users/huracan/scoop/apps/kdiff3/current/bin/kdiff3.exe\" \"$LOCAL\" \"$REMOTE\"
+	path = C:/Users/huracan/scoop/apps/kdiff3/current/bin/kdiff3.exe
 [merge]
 	guitool = kdiff3
 [mergetool "kdiff3"]
-	cmd = \"$SCOOP/apps/kdiff3/current/bin/kdiff3.exe\" \"$BASE\" \"$LOCAL\" \"$REMOTE\" -o \"$MERGED\"
-	path = $SCOOP/apps/kdiff3/current/bin/kdiff3.exe
+	cmd = \"C:/Users/huracan/scoop/apps/kdiff3/current/bin/kdiff3.exe\" \"$BASE\" \"$LOCAL\" \"$REMOTE\" -o \"$MERGED\"
+	path = C:/Users/huracan/scoop/apps/kdiff3/current/bin/kdiff3.exe
+[http]
+	proxy = socks://10.8.0.1:1080
