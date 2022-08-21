@@ -152,4 +152,4 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_cucumber_cucumber_args='--profile syntastic'
 
 " Windows HiDPI
-set guifont=MesloLGM_NF:h10:cANSI:qDRAFT
+set guifont=MesloLGM_NF:h12:cANSI:qDRAFT
