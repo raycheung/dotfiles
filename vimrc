@@ -68,7 +68,7 @@ set colorcolumn=120
 highlight ColorColumn ctermbg=darkgrey
 
 " Auto remove trailing whitespace
-autocmd BufWritePre * :%s/\s\+$//e
+"autocmd BufWritePre * :%s/\s\+$//e
 
 " I just hate these modes
 nmap q <Nop>
@@ -138,7 +138,7 @@ nnoremap <silent> ,n :NERDTreeFind<CR>
 let &winheight = &lines * 6 / 10
 
 " Fireplace
-let g:fireplace_python_executable = 'python'
+"let g:fireplace_python_executable = 'python'
 
 " Specific for Clojure
 autocmd BufNewFile,BufRead *.clj set iskeyword-=.
@@ -152,4 +152,4 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_cucumber_cucumber_args='--profile syntastic'
 
 " Windows HiDPI
-set guifont=MesloLGM_NFM:h12:cANSI:qDRAFT
+set guifont=Cascadia\ Code\ PL:h12:cANSI:qDRAFT
