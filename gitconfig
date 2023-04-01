@@ -14,7 +14,7 @@
 [rebase]
 	autoStash = false
 [credential "helperselector"]
-	selected = manager-core
+	selected = manager
 [i18n]
 	filesEncoding = utf-8
 [gui]
@@ -32,4 +32,4 @@
 [http]
 	proxy = socks://10.8.0.1:1080
 [credential]
-	helper = manager-core
+	helper = manager
