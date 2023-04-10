@@ -26,9 +26,7 @@ Plug 'chriskempson/base16-vim'
 
 " Clojurealm
 Plug 'tpope/vim-fireplace'
-Plug 'guns/vim-clojure-highlight'
 Plug 'venantius/vim-eastwood'
-Plug 'venantius/vim-cljfmt'
 
 call plug#end()
 
@@ -58,7 +56,6 @@ set backupskip=/tmp/*,/private/tmp/*
 
 " Mouse mode
 set mouse=a
-"set ttymouse=xterm2
 
 " Rainbow parens
 let g:rainbow_active=1
@@ -68,7 +65,7 @@ set colorcolumn=120
 highlight ColorColumn ctermbg=darkgrey
 
 " Auto remove trailing whitespace
-"autocmd BufWritePre * :%s/\s\+$//e
+autocmd BufWritePre * :%s/\s\+$//e
 
 " I just hate these modes
 nmap q <Nop>
@@ -137,19 +134,12 @@ nnoremap <silent> ,n :NERDTreeFind<CR>
 " Auto maximizing selected window
 let &winheight = &lines * 6 / 10
 
-" Fireplace
-"let g:fireplace_python_executable = 'python'
-
-" Specific for Clojure
-autocmd BufNewFile,BufRead *.clj set iskeyword-=.
-autocmd BufNewFile,BufRead *.clj set iskeyword-=/
-
 " Enable syntastic
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-let g:syntastic_cucumber_cucumber_args='--profile syntastic'
+let g:syntastic_clojure_checkers = ['eastwood']
 
 " Windows HiDPI
 set guifont=Cascadia\ Code\ PL:h12:cANSI:qDRAFT

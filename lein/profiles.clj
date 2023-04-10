@@ -1,26 +1,8 @@
 {:user {:plugins [[io.aviso/pretty "1.1"]
                   [mvxcvi/whidbey "2.2.1"]
                   [lein-kibit "0.1.8"]
-                  [lein-cljfmt "0.8.2"]
                   [lein-ancient "0.6.15"]]
         :middleware [io.aviso.lein-pretty/inject
                      whidbey.plugin/repl-pprint]
         :dependencies [[io.aviso/pretty "1.1"]
-                       [cljfmt "0.8.2"]]
-        :repl-options {:init (require 'cljfmt.core)}
-        :cljfmt {:indents {map              [[:inner 1]]
-                           reduce           [[:inner 1]]
-                           assoc            [[:block 2]]
-                           assoc-in         [[:block 2]]
-                           update           [[:block 2]]
-                           update-in        [[:block 2]]
-                           into             [[:block 1]]
-                           ->               [[:inner 1]]
-                           ->>              [[:inner 1]]
-                           #"ring/.*"       [[:inner 0]]
-                           #"swagger-ui/.*" [[:inner 0]]
-                           #"wrap-.*"       [[:inner 0]]
-                           #"http/.*"       [[:inner 0]]
-                           #"navigate-.*"   [[:inner 0]]
-                           #"rf/.*"         [[:inner 0]]
-                           }}}}
+                       [jonase/eastwood "1.3.0" :exclusions [org.clojure/clojure]]]}}
