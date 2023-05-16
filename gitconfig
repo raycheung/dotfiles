@@ -29,7 +29,5 @@
 [mergetool "kdiff3"]
 	cmd = \"C:/Users/huracan/scoop/apps/kdiff3/current/bin/kdiff3.exe\" \"$BASE\" \"$LOCAL\" \"$REMOTE\" -o \"$MERGED\"
 	path = C:/Users/huracan/scoop/apps/kdiff3/current/bin/kdiff3.exe
-[http]
-	proxy = socks://10.8.0.1:1080
 [credential]
 	helper = manager
