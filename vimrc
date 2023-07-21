@@ -26,7 +26,6 @@ Plug 'chriskempson/base16-vim'
 
 " Clojurealm
 Plug 'tpope/vim-fireplace'
-Plug 'venantius/vim-eastwood'
 
 call plug#end()
 
@@ -139,7 +138,6 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-let g:syntastic_clojure_checkers = ['eastwood']
 
 " Windows HiDPI
 set guifont=Cascadia\ Code\ PL:h12:cANSI:qDRAFT
