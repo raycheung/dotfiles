@@ -31,3 +31,5 @@
 	path = C:/Users/huracan/scoop/apps/kdiff3/current/bin/kdiff3.exe
 [credential]
 	helper = manager
+[credential "https://github.com"]
+	username = raycheung
