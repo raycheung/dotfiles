@@ -13,6 +13,8 @@
 	rebase = false
 [rebase]
 	autoStash = false
+	autosquash = false
+	updateRefs = false
 [credential "helperselector"]
 	selected = manager
 [i18n]

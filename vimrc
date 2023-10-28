@@ -1,8 +1,5 @@
 call plug#begin('~/.vim/plugged')
 
-" Configure polyglot
-let g:polyglot_disabled = ['csv']
-
 Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-fugitive'
 Plug 'mhinz/vim-startify'
@@ -46,7 +43,6 @@ set expandtab
 set smarttab
 
 if filereadable(expand("~/.vimrc_background"))
-  let base16colorspace=256
   source ~/.vimrc_background
 endif
 
