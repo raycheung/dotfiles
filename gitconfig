@@ -15,8 +15,6 @@
 	autoStash = false
 	autosquash = false
 	updateRefs = false
-[credential "helperselector"]
-	selected = manager
 [i18n]
 	filesEncoding = utf-8
 [gui]
@@ -35,3 +33,5 @@
 	helper = manager
 [credential "https://github.com"]
 	username = raycheung
+[http]
+	proxy = socks://10.64.0.1:1080
