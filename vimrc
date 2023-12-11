@@ -5,7 +5,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'mhinz/vim-startify'
 Plug 'preservim/nerdtree'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'rking/ag.vim'
+Plug 'jremmen/vim-ripgrep'
 Plug 'easymotion/vim-easymotion'
 Plug 'ervandew/supertab'
 Plug 'tpope/vim-commentary'
@@ -69,7 +69,7 @@ nmap Q <Nop>
 " 100 times improvement for searching
 nnoremap // y/<C-r><C-w><CR>
 vnoremap // y/<C-r>"<CR>
-nnoremap /ag :Ag! '<C-r>/'<CR>
+nnoremap /rg :Rg '<C-r>/'<CR>
 nnoremap <silent> <leader>/ :nohl<CR>
 
 " and 100 times better for copying
@@ -93,16 +93,16 @@ if !exists('g:airline_symbols')
 endif
 let g:airline_symbols.linenr = '¶'
 
-" Better ag
-let g:ag_highlight=1
+" Better rg
+let g:rg_highlight=1
 
 let g:ctrlp_prompt_mappings = {
   \ 'AcceptSelection("e")': ['<c-e>', '<2-LeftMouse>'],
   \ 'AcceptSelection("h")': ['<cr>'],
   \ }
 
-" Use ag for ctrlp
-let g:ctrlp_user_command = 'ag %s -l -g ""'
+" Use rg for ctrlp
+let g:ctrlp_user_command = 'rg %s -l -g ""'
 
 " Quicker start with ctrlp
 let g:ctrlp_reuse_window = 'startify'
